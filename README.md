@@ -1,3 +1,1 @@
 # MiaTech
-
-Primo repository
