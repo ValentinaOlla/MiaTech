@@ -13,6 +13,10 @@ p#rgb {
     color: rgb(254, 32, 32,)
 }
 
+p#rgba {
+    color: rgba(254, 0, 0, 0.70)
+}
+
 h1 {
     color: blue;
 }
