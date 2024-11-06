@@ -17,6 +17,10 @@ p#rgba {
     color: rgba(254, 0, 0, 0.70)
 }
 
+p#hex {
+    color: #ff0000
+}
+
 h1 {
     color: blue;
 }
