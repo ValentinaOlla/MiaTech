@@ -1,7 +1,12 @@
+Stylesheet
 
 p {
     color: blueviolet;
     text-align: right; 
+}
+
+p#colorname {
+    color: red;
 }
 
 h1 {
