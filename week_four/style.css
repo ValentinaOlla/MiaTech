@@ -3,3 +3,27 @@ p {
     color: blueviolet;
     text-align: right; 
 }
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: rgb(23, 133, 72);
+}
+
+h3 {
+    color: rgb(255, 213, 0);
+}
+
+h4 {
+    color: rgb(255, 0, 128);
+}
+
+h5 {
+    color: rgb(0, 247, 255);
+}
+
+h6 {
+    color: rgb(136, 0, 255);
+}
