@@ -1,4 +1,9 @@
 Stylesheet
+* {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
 
 p {
     color: blueviolet;
