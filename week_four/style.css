@@ -13,6 +13,11 @@ a:hover {
     color: goldenrod;
 }
 
+.div_properties {
+color: purple;
+text-align: center;
+}
+
 ul li {
     list-style: circle;
     padding: 10px;
