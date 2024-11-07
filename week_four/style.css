@@ -13,6 +13,17 @@ a:hover {
     color: goldenrod;
 }
 
+ul li {
+    list-style: circle;
+    padding: 10px;
+}
+
+ul li:last-child {
+    list-style: georgian;
+    text-decoration: line-through;
+    font-weight: bolder;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-align: right;
 }
