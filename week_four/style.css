@@ -45,27 +45,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
 }   
 
+.colore_paragrafo {
+    color: blue;
+}
+
+#colore_paragrafo {
+    color: brown;
+}
+
 p {
-    color: blueviolet;
-    text-align: right; 
+    color: black;
 }
-
-p#colorname {
-    color: red;
-}
-
-p#rgb {
-    color: rgb(254, 32, 32,)
-}
-
-p#rgba {
-    color: rgba(254, 0, 0, 0.70)
-}
-
-p#hex {
-    color: #ff0000
-}
-
 h1 {
     color: blue;
 }
