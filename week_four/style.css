@@ -14,6 +14,10 @@ div.split3 div{
     padding: 0 2%
     }
 
+.nascosto {
+    display: none;
+}
+
 ul li {
     list-style: none;
     display: inline-block;
