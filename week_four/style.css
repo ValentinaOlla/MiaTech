@@ -1,17 +1,4 @@
 Stylesheet
-* {
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 300;
-}
-
-a {
-    color: green;
-}
-
-a:hover {
-    color: goldenrod;
-}
 
 div {
  padding: 20px;
@@ -19,43 +6,3 @@ div {
  border: 30px;
 }
 
-.div_properties {
-color: purple;
-text-align: center;
-}
-
-ul li {
-    list-style: circle;
-    padding: 10px;
-}
-
-ul li:last-child {
-    list-style: georgian;
-    text-decoration: line-through;
-    font-weight: bolder;
-}
-
-
-.font-size {
-    font-size: 30px;
-}
-
-.font-style {
-    font-style: italic;
-}
-
-.font-weight {
-    font-weight: lighter;
-}   
-
-.colore_paragrafo {
-    color: blue;
-}
-
-#colore_paragrafo {
-    color: brown;
-}
-
-p {
-    color: black;
-}
