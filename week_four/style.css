@@ -16,6 +16,7 @@ a:hover {
 div {
  padding: 20px;
  margin: 50px;
+ border: 30px;
 }
 
 .div_properties {
