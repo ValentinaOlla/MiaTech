@@ -11,3 +11,19 @@ ul li {
     display: inline-block;
     margin: 0 10px;
 }
+
+.inline, .inline-block, .block {
+    display: inline;
+    height: fit-content;
+    width: 20%;
+    border: 5px blueviolet;
+    background-color: lightslategray;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
