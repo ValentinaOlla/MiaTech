@@ -6,6 +6,14 @@ div {
  border: 30px;
 }
 
+div.split3 div{
+    float: left;
+    width: 29%;
+    width: 33%;
+    width: 29%;
+    padding: 0 2%
+    }
+
 ul li {
     list-style: none;
     display: inline-block;
