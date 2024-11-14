@@ -13,6 +13,10 @@ a:hover {
     color: goldenrod;
 }
 
+div {
+ padding: 20px;
+}
+
 .div_properties {
 color: purple;
 text-align: center;
@@ -29,9 +33,6 @@ ul li:last-child {
     font-weight: bolder;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-align: right;
-}
 
 .font-size {
     font-size: 30px;
@@ -55,23 +56,4 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     color: black;
-}
-h1 {
-    color: blue;
-}
-
-h3 {
-    color: rgb(255, 213, 0);
-}
-
-h4 {
-    color: rgb(255, 0, 128);
-}
-#h5 {
-    color: rgb(0, 247, 255);
-    background-color: black;
-}
-
-h6 {
-    color: rgb(136, 0, 255);
 }
