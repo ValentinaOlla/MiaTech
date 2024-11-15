@@ -1,4 +1,18 @@
 Stylesheet
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    min-height: 100%;
+  }
+  
+  .bottom {
+    height: 50px;
+    position: fixed;
+  }
+
 
 div {
  padding: 20px;
