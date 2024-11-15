@@ -14,6 +14,10 @@ div.split3 div{
     padding: 0 2%
     }
 
+img.float {
+float: left;
+}
+
 .nascosto {
     display: none;
 }
