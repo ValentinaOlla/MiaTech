@@ -26,6 +26,14 @@ html, body {
     background-color: lightgreen;
 }
 
+p#rem {
+    font-size: 7rem;
+}
+
+p#em {
+    font-size: 7em;
+}
+
 div {
  padding: 20px;
  margin: 50px;
