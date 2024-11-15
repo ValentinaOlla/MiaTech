@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Esercizio CSS</title>
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio CSS</title>
+</head>
+
+<body>
+    <nav>
+        <ul id="main-menu">
+            <li><a href="#">Primo</a></li>
+            <li><a href="#">Secondo</a></li>
+            <li><a href="#">Terzo</a></li>
+        </ul>
+    </nav>
+    <div>
+        <p>
+            <span class="inline">Inline, inline-block, block</span>
+            <span class="inline-block">Inline, inline-block, block</span>
+            <span class="block">Inline, inline-block, block</span>
+        </p>
+    </div>
+    <div class="split3">
         <div>
-            <p>
-                <span class="inline">Inline, inline-block, block</span>
-                <span class="inline-block">Inline, inline-block, block</span>
-                <span class="block">Inline, inline-block, block</span>
-            </p>
-            <ul>
-                <li>Primo</li>
-                <li>Secondo</li>
-                <li>Terzo</li>
-            </ul>
+            <h2>Colonna 1</h2>
+            <p>Testo del paragrafo 1</p>
         </div>
-        <div class="split3">
-            <div>
-                <h2>Colonna 1</h2>
-                <p>Testo del paragrafo 1</p>
-            </div>
-            <div>
-                <h2>Esercizio sulla regola float</h2>
-                <p>Questo paragrafo deve stare a sinistra dell'immagine seguente</p>
-                <img class="float" src="website_layout.png" alt="website layout">
-            </div>
-            <div>
-                <h2>Colonna 3</h2>
-                <p class="nascosto">Testo del paragrafo 3</p>
-            </div>
-            </div>
-            <div class="clearer"> </div>
+        <div>
+            <h2>Esercizio sulla regola float</h2>
+            <p>Questo paragrafo deve stare a sinistra dell'immagine seguente <br> Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Nostrum fugit vel modi explicabo repellendus aperiam quos, adipisci, consequuntur sapiente ipsa iste, et
+                laborum. Ullam repellendus facere consequuntur facilis saepe. Asperiores! <br> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloribus excepturi repellendus earum repudiandae vel accusantium similique, aliquid enim recusandae
+                quisquam reprehenderit debitis cum distinctio beatae voluptatibus architecto necessitatibus! Voluptate, repellat.</p>
+            <img class="float" src="website_layout.png" alt="website layout">
         </div>
-    </body>
+        <div>
+            <h2>Colonna 3</h2>
+            <p class="nascosto">Testo del paragrafo nascosto <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facere suscipit nam, delectus quidem minima tempora reiciendis beatae quas aspernatur eius possimus
+                vitae. Accusantium accusamus ipsam enim temporibus tempore suscipit nobis.</p>
+        </div>
+    </div>
+    <div class="clearer"> </div>
+    </div>
+</body>
+
 </html>
