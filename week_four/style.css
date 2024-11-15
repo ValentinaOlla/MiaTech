@@ -13,6 +13,12 @@ html, body {
     position: fixed;
   }
 
+.square {
+    width: 20%;
+    height: 0;
+    padding-top: 20%;
+    background-color: lightblue;
+}
 
 div {
  padding: 20px;
