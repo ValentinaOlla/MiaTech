@@ -32,3 +32,19 @@ ul#main-menu li a {
     display: block;
     text-align: center;
 }
+
+.box {
+    float: left;
+    background-color: lightseagreen;
+    width: 50%;
+}
+
+.box img {
+    width: 100%;
+}
+
+.contenitore::after {
+    content: "";
+    display: block;
+    clear: both;
+}
