@@ -48,3 +48,12 @@ ul#main-menu li a {
     display: block;
     clear: both;
 }
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
