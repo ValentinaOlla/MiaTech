@@ -1,8 +1,8 @@
 
 .flex-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
     background-color: blueviolet;
 }
 
