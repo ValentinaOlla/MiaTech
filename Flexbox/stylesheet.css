@@ -1,4 +1,10 @@
 
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
 .flex-container{
     display: flex;
     height: 200px;
