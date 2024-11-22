@@ -20,7 +20,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 50px 150px;
     background-color: violet;
     padding: 10px;
   }
