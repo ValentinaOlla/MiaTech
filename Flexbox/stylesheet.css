@@ -53,3 +53,35 @@
 .merge {
     grid-column: span 2;
   }
+
+.calculator {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: gainsboro;
+  }
+
+.display {
+    grid-column: 1 / span 4;
+    height: 50px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+.tasti {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 50px;
+  }
+
+.tasto {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+  }
