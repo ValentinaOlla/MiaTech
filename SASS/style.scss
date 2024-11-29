@@ -1,5 +1,9 @@
+$primary-color: bisque;
+$secondary-color: goldenrod;
+$font-size: 18px;
+
 nav {
-    background-color: goldenrod;
+    background-color: $secondary-color;
     padding: 20px 0;
     text-align: center;
   
@@ -14,8 +18,8 @@ nav {
         margin: 0 10px;
   
         a {
-          color: bisque;
-          font-size: 18px;
+          color: $primary-color;
+          font-size: $font-size;
           text-decoration: none;
   
           &:hover {
