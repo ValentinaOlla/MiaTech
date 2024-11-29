@@ -17,4 +17,11 @@ nav {
         nav ul li a:hover {
           color: #ff0000; }
 
+.nav-item, .nav-item:last-child {
+  background-color: blueviolet; }
+
+.nav-item:last-child {
+  background-color: #e7e7e7;
+  border-color: #333333; }
+
 /*# sourceMappingURL=stylesheet.css.map */
