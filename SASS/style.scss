@@ -1,0 +1,27 @@
+nav {
+    background-color: goldenrod;
+    padding: 20px 0;
+    text-align: center;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+  
+      li {
+        margin: 0 10px;
+  
+        a {
+          color: bisque;
+          font-size: 18px;
+          text-decoration: none;
+  
+          &:hover {
+            color: #ff0000;
+          }
+        }
+      }
+    }
+  }

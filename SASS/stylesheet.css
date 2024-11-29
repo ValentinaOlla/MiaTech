@@ -1,3 +1,20 @@
-
+nav {
+  background-color: goldenrod;
+  padding: 20px 0;
+  text-align: center; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; }
+    nav ul li {
+      margin: 0 10px; }
+      nav ul li a {
+        color: bisque;
+        font-size: 18px;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: #ff0000; }
 
 /*# sourceMappingURL=stylesheet.css.map */
