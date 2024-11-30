@@ -1,5 +1,17 @@
 $noHover: false;
 $base-font-size: 18px;
+$colors: (
+home: #F2A38A,
+blog: #A3D2CA,
+about: #F2CD5C,
+contact: #84A9AC);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+}
+
 
 @for $i from 1 through 2 {
   .column-#{$i} {
