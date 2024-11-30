@@ -33,6 +33,6 @@ nav {
     gap: 50px;
     justify-content: space-between; }
     .contenitori .container .first-column {
-      width: 100% / 3; }
+      width: calc(100% / 3); }
 
 /*# sourceMappingURL=stylesheet.css.map */

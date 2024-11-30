@@ -52,7 +52,7 @@ nav {
       justify-content: space-between;
 
       .first-column {
-      width: 100% / 3;
+      width: calc(100% / 3);
       }
     }
   }
