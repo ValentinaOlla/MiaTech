@@ -1,3 +1,11 @@
+.column-1 {
+  height: 100px;
+  background-color: lightblue; }
+
+.column-2 {
+  height: 100px;
+  background-color: darkblue; }
+
 @media (prefers-color-scheme: dark) {
   .navbar nav {
     background-color: #000000; }
@@ -33,14 +41,13 @@ nav {
   border-color: #333333; }
 
 .contenitori {
-  background-color: lightgoldenrodyellow;
   margin-bottom: 80px;
   display: flex; }
   .contenitori .container {
     display: flex;
     gap: 50px;
     justify-content: space-between; }
-    .contenitori .container .first-column {
+    .contenitori .container .column-1 {
       width: calc(100% / 3); }
 
 /*# sourceMappingURL=stylesheet.css.map */

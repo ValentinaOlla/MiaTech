@@ -1,6 +1,19 @@
 $noHover: false;
 $base-font-size: 18px;
 
+@for $i from 1 through 2 {
+  .column-#{$i} {
+    height: 100px;
+
+    @if ($i == 1) {
+    background-color: lightblue;
+    } @else {
+    background-color: darkblue;
+    }
+  }
+}
+
+
 @import 'colors';
 
 @function em($target, $base-font-size: $base-font-size) {
@@ -70,7 +83,6 @@ nav {
 
 
 .contenitori {
-  background-color: $container-background-color;
   margin-bottom: 80px;
   display: flex;
 
@@ -79,7 +91,7 @@ nav {
       gap: 50px;
       justify-content: space-between;
 
-      .first-column {
+      .column-1 {
       width: calc(100% / 3);
       }
     }
