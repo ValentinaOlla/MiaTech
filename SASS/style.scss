@@ -1,5 +1,5 @@
-$primary-color: bisque;
-$secondary-color: goldenrod;
+@import 'colors';
+
 $font-size: 18px;
 
 nav {
@@ -31,18 +31,18 @@ nav {
   }
 
 .nav-item {
-    background-color: blueviolet;
+    background-color: $nav-item-color;
   }
 
 .nav-item:last-child {
     @extend .nav-item;
-    background-color: #e7e7e7;
-    border-color: #333333;
+    background-color: $nav-item-last-child-color;
+    border-color: $nav-item-last-child-border-color;
 }
 
 
 .contenitori {
-  background-color: lightgoldenrodyellow;
+  background-color: $container-background-color;
   margin-bottom: 80px;
   display: flex;
 
