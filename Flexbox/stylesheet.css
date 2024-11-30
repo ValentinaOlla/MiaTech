@@ -29,6 +29,10 @@
     font-size: 30px;
 }
 
+.ridotto_1 {
+  flex-shrink:  1;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
