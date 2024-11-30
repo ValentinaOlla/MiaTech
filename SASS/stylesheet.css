@@ -1,3 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  .navbar nav {
+    background-color: #000000; }
+    .navbar nav a {
+      color: white; }
+      .navbar nav a:hover {
+        color: yellow; } }
+
 nav {
   background-color: goldenrod;
   padding: 20px 0;

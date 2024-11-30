@@ -2,6 +2,26 @@
 
 $font-size: 18px;
 
+@mixin dark-navbar {
+  @media (prefers-color-scheme: dark) {
+    nav{
+      background-color: #000000;
+
+      a{
+        color: white;
+
+        &:hover {
+          color: yellow;
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  @include dark-navbar;
+}
+
 nav {
     background-color: $secondary-color;
     padding: 20px 0;
