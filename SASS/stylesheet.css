@@ -1,9 +1,11 @@
 .column-1 {
-  height: 100px;
+  height: 500px;
+  color: white;
   background-color: lightblue; }
 
 .column-2 {
-  height: 100px;
+  height: 500px;
+  color: white;
   background-color: darkblue; }
 
 @media (prefers-color-scheme: dark) {

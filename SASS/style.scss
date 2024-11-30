@@ -3,7 +3,8 @@ $base-font-size: 18px;
 
 @for $i from 1 through 2 {
   .column-#{$i} {
-    height: 100px;
+    height: 500px;
+    color: white;
 
     @if ($i == 1) {
     background-color: lightblue;
