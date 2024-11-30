@@ -1,5 +1,6 @@
 @import 'colors';
 
+$noHover: false;
 $base-font-size: 18px;
 
 @function em($target, $base-font-size: $base-font-size) {
@@ -47,8 +48,10 @@ nav {
           font-size: em(18px);
           text-decoration: none;
   
+          @if not($noHover) {
           &:hover {
             color: #ff0000;
+            }
           }
         }
       }
