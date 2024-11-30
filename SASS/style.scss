@@ -39,3 +39,20 @@ nav {
     background-color: #e7e7e7;
     border-color: #333333;
 }
+
+
+.contenitori {
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 80px;
+  display: flex;
+
+    .container {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+
+      .first-column {
+      width: 100% / 3;
+      }
+    }
+  }
