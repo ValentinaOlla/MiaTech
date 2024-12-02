@@ -1,0 +1,18 @@
+.background {
+  width: 300px;
+  height: 400px; }
+
+.top {
+  height: 25%;
+  background-color: green; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 75%; }
+  .container .column {
+    background-color: green;
+    width: 45%;
+    height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
