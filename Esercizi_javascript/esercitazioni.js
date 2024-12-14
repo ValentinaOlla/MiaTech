@@ -26,6 +26,6 @@ let outside = 15
     console.log(outside, inside);
     
 }
-console.log(outside, inside);
+console.log(outside);
 
 
