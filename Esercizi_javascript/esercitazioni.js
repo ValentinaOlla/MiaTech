@@ -21,4 +21,6 @@ let person = {
 }
 
 person.age = "35";
+person.job = "Web Design Intern";
 
+console.log("Job: ", person.job);
