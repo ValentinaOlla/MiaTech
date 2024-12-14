@@ -19,4 +19,7 @@ let person = {
     age: "36",
     city: "Perugia"
 }
+
+person.age = "35";
+
 console.log(person.age);
