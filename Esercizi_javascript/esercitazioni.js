@@ -1,11 +1,15 @@
-//Somma elementi array
+//Array reverse
 let numbers = [4, 18, 72, 43, 2, 81, 35]
 console.log(numbers);
 
-let somma = 0
-for (let i = 0; i < numbers.length; i++) {
-    somma += numbers[i]
+let lunghezza = numbers.length;
+let meta = Math.floor(lunghezza / 2);
+
+for (let i = 0; i < meta; i++) {
+    let temp =numbers[i];
+    numbers[i] = numbers[lunghezza - 1 - i];
+    numbers[lunghezza - 1 - i] = temp;
 }
-console.log("La somma è: " + somma);
+console.log("L'Array invertito' è: " + numbers);
 
 
