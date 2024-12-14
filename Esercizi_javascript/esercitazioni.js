@@ -36,3 +36,6 @@ while (n>=1) {
     }
     n--;
 }
+
+//Crea prompt
+let word = prompt('sternocleidomastoideo')
