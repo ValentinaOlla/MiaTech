@@ -6,18 +6,21 @@ if (number >5) {
     console.log("La variabile è minore di 5");
 }
 
-//If-else and else-if
-let score = parseInt (prompt('Inserisci il tuo voto'));
+//Switch
+let score = parseInt (prompt("Inserisci il tuo voto"));
 
-if (score >= 90) {
-    console.log("Voto ottimo")
-} else if (score >= 70) {
-    console.log("Voto buono")
-} else if (score >= 60) {
-    console.log("Voto sufficiente")
-} else {
-    console.log("Voto insufficiente");
-}
-
+switch (true) {
+    case score >=90:
+        console.log("Voto ottimo");
+        break;
+    case score >= 70:
+        console.log("Voto buono");
+        break;
+    case score >= 60:
+         console.log("Voto sufficiente");
+        break;
+    default:
+        console.log("Voto insufficiente");
+    }
 
 
