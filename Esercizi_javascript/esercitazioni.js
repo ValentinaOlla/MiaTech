@@ -19,3 +19,13 @@ let number = 123
 }
 console.log(number);
 
+//Scoping delle variabili
+let outside = 15
+{ 
+    let inside = 23
+    console.log(outside, inside);
+    
+}
+console.log(outside, inside);
+
+
