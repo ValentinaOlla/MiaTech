@@ -10,3 +10,12 @@ console.log(mug);
 mug = 200
 console.log(mug);
 
+//Ridefinizione delle variabili
+let number = 123
+{
+    let number = 456
+    console.log(number);
+    
+}
+console.log(number);
+
