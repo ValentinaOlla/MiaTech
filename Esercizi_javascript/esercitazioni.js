@@ -28,4 +28,9 @@ let outside = 15
 }
 console.log(outside);
 
-
+//Genera numeri pari
+for (let n = 0; n <= 20; n++) {
+    if (n % 2 == 0) {
+        alert( n );
+    }
+}
