@@ -19,4 +19,4 @@ let person = {
     age: "36",
     city: "Perugia"
 }
-console.log(person);
+console.log(person.age);
