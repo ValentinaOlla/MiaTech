@@ -2,3 +2,11 @@
 let year = 365 
 const day = 24 
 console.log(year, day);
+
+//Cambio di valore
+let mug = 250
+console.log(mug);
+
+mug = 200
+console.log(mug);
+
