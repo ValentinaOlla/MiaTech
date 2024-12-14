@@ -38,4 +38,5 @@ while (n>=1) {
 }
 
 //Crea prompt
-let word = prompt('sternocleidomastoideo')
+let word = prompt('Inserisci una parola')
+console.log(word.length);
