@@ -22,4 +22,3 @@ let person = {
 
 person.age = "35";
 
-console.log(person.age);
