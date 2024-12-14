@@ -37,6 +37,10 @@ while (n>=1) {
     n--;
 }
 
-//Crea prompt
-let word = prompt('Inserisci una parola')
-console.log(word.length);
+//Richiesta imput corretto
+let word;
+do {
+word = prompt('Inserisci una parola di almeno 5 caratteri');
+} while (word.length <5);
+console.log("Hai inserito: ", word);
+
