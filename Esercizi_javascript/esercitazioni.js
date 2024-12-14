@@ -28,9 +28,11 @@ let outside = 15
 }
 console.log(outside);
 
-//Genera numeri pari
-for (let n = 0; n <= 20; n++) {
-    if (n % 2 == 0) {
-        alert( n );
+//Genera numeri dispari decrescenti
+let n = 10
+while (n>=1) {
+    if (n%2 !==0) {
+        console.log(n);
     }
+    n--;
 }
