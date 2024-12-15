@@ -45,7 +45,7 @@ let student = {
     grade: "First",
     school: "MiaTech"
 }
-let keys = Object.keys(student);
-console.log(keys);
+let value = Object.values(student);
+console.log(value);
 
 
