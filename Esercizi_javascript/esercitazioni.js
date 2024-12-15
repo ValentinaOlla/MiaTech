@@ -37,3 +37,15 @@ function outerFunction (X, initialValue) {
     }
     return innerFunction;
 }
+
+//Object.keys()
+let student = { 
+    name: "Valentina",
+    age: "36",
+    grade: "First",
+    school: "MiaTech"
+}
+let keys = Object.keys(student);
+console.log(keys);
+
+
