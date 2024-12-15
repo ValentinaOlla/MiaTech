@@ -1,16 +1,14 @@
-//Array reverse
-let numbers = [4, 18, 72, 43, 2, 81, 35]
-console.log(numbers);
+//forEach & .map
+let numbers = [1, 2, 3, 4, 5]
+numbers.forEach(function(number) {
+    console.log(number * 2);
+});
 
-let lunghezza = numbers.length;
-let meta = Math.floor(lunghezza / 2);
+let squaredNumbers = numbers.map(function(element) {
+    return element ** 2;
+});
 
-for (let i = 0; i < meta; i++) {
-    let temp =numbers[i];
-    numbers[i] = numbers[lunghezza - 1 - i];
-    numbers[lunghezza - 1 - i] = temp;
-}
-console.log("L'Array invertito' è: " + numbers);
+console.log(squaredNumbers);
 
 //Crea un oggetto
 
