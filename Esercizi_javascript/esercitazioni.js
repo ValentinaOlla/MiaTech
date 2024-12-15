@@ -38,14 +38,18 @@ function outerFunction (X, initialValue) {
     return innerFunction;
 }
 
-//Object.keys()
-let student = { 
+//Object.entries()
+const student = { 
     name: "Valentina",
     age: "36",
     grade: "First",
     school: "MiaTech"
 }
-let value = Object.values(student);
-console.log(value);
+let entries = Object.entries(student);
+console.log(entries);
+
+for (const [key, value] of Object.entries(student)) {
+    console.log(`${key}: ${value}`);
+}
 
 
