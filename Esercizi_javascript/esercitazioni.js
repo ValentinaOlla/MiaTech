@@ -27,3 +27,11 @@ for (let all in person) {
     console.log(all + " " + person[all]);
 }
 
+//Outer function and Inner function
+
+function outerFunction (X) {
+    function innerFunction (Y) {
+        return X + Y;
+    }
+    return innerFunction;
+}
