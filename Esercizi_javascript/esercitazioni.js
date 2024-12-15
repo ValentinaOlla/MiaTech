@@ -29,9 +29,11 @@ for (let all in person) {
 
 //Outer function and Inner function
 
-function outerFunction (X) {
+function outerFunction (X, initialValue) {
+    let result = initialValue;
     function innerFunction (Y) {
-        return X + Y;
+        result += Y;
+        return result;
     }
     return innerFunction;
 }
