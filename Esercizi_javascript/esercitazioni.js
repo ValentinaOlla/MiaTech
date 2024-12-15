@@ -43,6 +43,15 @@ let failedStudent = students.find(student => student.grade < 60)
 
 console.log(passedStudents, failedStudent);
 
+//Reduce & sort
+const expences = [1.49, 0.98, 3.65, 7.9]
+const sum = expences.reduce((total, amount) => total + amount);
+
+const words = ["banana", "apple", "date", "cherry"]
+const alphabet = words.sort();
+
+console.log(sum, alphabet);
+
 //Crea un oggetto
 
 let person = {
