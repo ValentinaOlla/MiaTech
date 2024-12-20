@@ -92,5 +92,20 @@ for (const [key, value] of Object.entries(student)) {
     console.log(`${key}: ${value}`);
 }
 
-
+function createCounter() {
+    let count = 0;
+    return {
+        increment: function() {
+        count = count + 1;
+        return count
+         }, 
+        decrement: function() {
+        count = count - 1;
+        return count
+        }
+    }
+}
+ let counter = createCounter()
+ console.log(counter.increment());
+ console.log(counter.decrement()); 
  
