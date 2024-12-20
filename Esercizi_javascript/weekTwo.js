@@ -39,3 +39,20 @@ const autoElettrica = new Elettrica("Volkswagen", "Maggiolino", "1938", 0, 10000
 autoElettrica.descrizione()
 autoElettrica.ricarica(5000)
 console.log(autoElettrica);
+
+const obj = [
+    {
+        name: "Silvia",
+        age: 25,
+    }, 
+    {
+        name: "Fabio",
+        age: 28,
+    }
+]
+
+for (i = 0; i < obj.length; i++) {
+    console.log(obj[i].name)
+}
+
+obj.forEach((item) => console.log(item.age))
