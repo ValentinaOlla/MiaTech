@@ -13,7 +13,8 @@ class Automobile {
     #incrementaContatore() {
         this.#contatoreChiamate++;
     }
-    aggiungiChilometri(km) {
+    aggiungiChilometri(km) { 
+        this.#incrementaContatore();
         this.chilometraggio += km;
     }
     mostraChilometraggio() {
