@@ -31,6 +31,13 @@ class Automobile {
             console.log("Attenzione: l'auto ha superato i 100000 km!");
         }
     }
+    static confrontaChilometraggio(auto1, auto2) {
+        if(auto1.chilometraggio >= auto2.chilometraggio) {
+            return `${auto1.marca} ${auto1.modello} ha più chilometri di ${auto2.marca} ${auto2.modello}`;
+        } else if (auto1.chilometraggio <= auto2.chilometraggio) {
+            return `${auto2.marca} ${auto2.modello} ha più chilometri di ${auto1.marca} ${auto1.modello}`;
+        }
+    }
 }
 
 let Volkswagen = new Automobile("Volkswagen", "Maggiolino", "1938");
@@ -39,6 +46,11 @@ Volkswagen.aggiungiChilometri(240000);
 Volkswagen.mostraChilometraggio();
 Volkswagen.saluta();
 Volkswagen.mostraEta();
+
+let auto1 = new Automobile("Daewoo", "Matiz", 2013, 150000);
+let auto2 = new Automobile("Toyota", "Corolla", 2018, 89000);
+let risultatoConfronto = Automobile.confrontaChilometraggio(auto1, auto2);
+console.log(risultatoConfronto);
 
 class Elettrica extends Automobile {
     constructor(marca, modello, anno, chilometraggio, autonomia) {
