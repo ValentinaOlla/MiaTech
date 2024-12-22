@@ -13,7 +13,7 @@ class Automobile {
         this.chilometraggio += km;
     }
     mostraChilometraggio() {
-        console.log(`Lautomobile a percorso ${this.chilometraggio}km`);
+        console.log(`L'automobile ha percorso ${this.chilometraggio}km`);
     }
     saluta() {
         console.log(`Ciao! Qeust'auto è una ${this.marca} modello ${this.modello}.`);
@@ -25,6 +25,11 @@ class Automobile {
     mostraEta() {
         let etaAutomobile = this.#calcolaEta();
         console.log(`Quest'auto ha ${etaAutomobile} anni.`);
+    }
+    _controllaChilometri() {
+        if (this.chilometraggio > 100000) {
+            console.log("Attenzione: l'auto ha superato i 100000 km!");
+        }
     }
 }
 
@@ -54,4 +59,8 @@ autoElettrica.ricarica(0)
 console.log(autoElettrica);
 autoElettrica.saluta();
 
+const autoUsata = new Elettrica("Peugeot", "e-208", 2020, 0, 0)
+autoUsata.aggiungiChilometri(139000);
+autoUsata.mostraChilometraggio();
+autoUsata._controllaChilometri();
 
