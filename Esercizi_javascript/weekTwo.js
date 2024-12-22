@@ -5,7 +5,7 @@ class Automobile {
         this.marca = marca;
         this.modello = modello;
         this.anno = anno;
-        this.chilometraggio = 0
+        this.chilometraggio = chilometraggio
     }
     descrizione() {
         console.log(`Questa auto è una ${this.marca} modello ${this.modello} del ${this.anno}.`);
@@ -16,6 +16,9 @@ class Automobile {
     aggiungiChilometri(km) { 
         this.#incrementaContatore();
         this.chilometraggio += km;
+    }
+    mostraContatoreChiamate() {
+        return this.#contatoreChiamate;
     }
     mostraChilometraggio() {
         console.log(`L'automobile ha percorso ${this.chilometraggio}km`);
