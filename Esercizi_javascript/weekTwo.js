@@ -1,5 +1,6 @@
 //Classe e costruttore
 class Automobile {
+    #contatoreChiamate = 0;
     constructor(marca, modello, anno, chilometraggio) {
         this.marca = marca;
         this.modello = modello;
@@ -7,6 +8,7 @@ class Automobile {
         this.chilometraggio = 0
     }
     descrizione() {
+        this.#contatoreChiamate++;
         console.log(`Questa auto è una ${this.marca} modello ${this.modello} del ${this.anno}.`);
     }
     aggiungiChilometri(km) {
