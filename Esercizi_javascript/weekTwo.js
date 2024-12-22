@@ -18,6 +18,14 @@ class Automobile {
     saluta() {
         console.log(`Ciao! Qeust'auto è una ${this.marca} modello ${this.modello}.`);
     }
+    #calcolaEta() {
+        const annoCorrente = new Date().getFullYear();
+        return annoCorrente - this.anno;
+    }
+    mostraEta() {
+        let etaAutomobile = this.#calcolaEta();
+        console.log(`Quest'auto ha ${etaAutomobile} anni.`);
+    }
 }
 
 let Volkswagen = new Automobile("Volkswagen", "Maggiolino", "1938");
@@ -25,6 +33,7 @@ Volkswagen.descrizione();
 Volkswagen.aggiungiChilometri(240000);
 Volkswagen.mostraChilometraggio();
 Volkswagen.saluta();
+Volkswagen.mostraEta();
 
 class Elettrica extends Automobile {
     constructor(marca, modello, anno, chilometraggio, autonomia) {
