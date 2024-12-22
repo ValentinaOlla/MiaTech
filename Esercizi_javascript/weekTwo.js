@@ -85,3 +85,9 @@ autoUsata.aggiungiChilometri(139000);
 autoUsata.mostraChilometraggio();
 autoUsata._controllaChilometri();
 
+class Camion extends Automobile {
+    constructor(marca, modello, anno, chilometraggio) {
+        super(marca, modello, anno, chilometraggio);
+    }
+}
+
