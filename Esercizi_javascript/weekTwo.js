@@ -20,6 +20,7 @@ class Automobile {
     mostraContatoreChiamate() {
         return this.#contatoreChiamate;
     }
+    
     mostraChilometraggio() {
         console.log(`L'automobile ha percorso ${this.chilometraggio}km`);
     }
