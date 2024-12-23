@@ -99,5 +99,19 @@ autoUsata._controllaChilometri();
 class Camion extends Automobile {
     constructor(marca, modello, anno, chilometraggio, caricoMassimo) {
         super(marca, modello, anno, chilometraggio);
+        this.caricoMassimo = caricoMassimo;
+        this.caricoAttuale = 0;
+    }
+    carico(kg) {
+        if (kg <= this.caricoMassimo - this.caricoAttuale) {
+            this.caricoAttuale += kg;
+        }
+    }
+    descrizione() {
+        console.log(`Questa auto è una ${this.marca} modello ${this.modello} del ${this.anno}, e ha un'autonomia di ${this.autonomia}km. Il suo carico massimo è di ${this.caricoMassimo}kg`);
     }
 }
+
+const mioCamion = new Camion ("Mercedes", "Actros", 2022, 100000, 4000)
+mioCamion.descrizione()
+console.log(mioCamion.caricoMassimo);
