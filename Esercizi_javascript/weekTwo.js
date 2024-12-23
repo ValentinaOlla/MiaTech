@@ -11,6 +11,11 @@ class Automobile {
     get chilometraggio() {
         return this.chilometraggio;
     }
+    set chilomettraggio(value) {
+        if (value >= this.chilometraggio) {
+            this.chilometraggio = value;
+        }
+    }
     descrizione() {
         console.log(`Questa auto è una ${this.marca} modello ${this.modello} del ${this.anno}.`);
     }
