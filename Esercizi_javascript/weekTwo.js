@@ -57,6 +57,13 @@ class Automobile {
             return `${auto2.marca} ${auto2.modello} ha più chilometri di ${auto1.marca} ${auto1.modello}`;
         }
     }
+    static verificaIstanza(obj, classe) {
+        if (obj instanceof classe) {
+            return `L'oggetto è un'istanza di ${classe.name}`;
+        } else {
+            return `L'oggetto non è un'istanza di ${classe.name}`;
+        }
+    }
 }
 
 let Volkswagen = new Automobile("Volkswagen", "Maggiolino", "1938");
@@ -115,3 +122,16 @@ class Camion extends Automobile {
 const mioCamion = new Camion ("Mercedes", "Actros", 2022, 100000, 4000)
 mioCamion.descrizione()
 console.log(mioCamion.caricoMassimo);
+
+const miaAuto = new Automobile ("Opel", "Corsa", 2015, 180000)
+const tuoCamion = new Camion ("Volvo", "FH", 2020, 213500, 3500)
+console.log(miaAuto instanceof Automobile);
+console.log(tuoCamion instanceof Camion);
+console.log(Automobile.verificaIstanza(miaAuto, Automobile));
+console.log(Camion.verificaIstanza(tuoCamion, Camion));
+console.log(Automobile.verificaIstanza(miaAuto, Camion));
+
+
+
+
+
