@@ -1,19 +1,20 @@
 //Classe e costruttore
 class Automobile {
     #contatoreChiamate = 0;
+    #chilometraggio = 0;
     constructor(marca, modello, anno, chilometraggio) {
         this.marca = marca;
         this.modello = modello;
         this.anno = anno;
-        this.chilometraggio = chilometraggio;
+        this.#chilometraggio = chilometraggio;
     } 
     
     get chilometraggio() {
-        return this.chilometraggio;
+        return this.#chilometraggio;
     }
     set chilomettraggio(value) {
-        if (value >= this.chilometraggio) {
-            this.chilometraggio = value;
+        if (value >= this.#chilometraggio) {
+            this.#chilometraggio = value;
         }
     }
     descrizione() {
@@ -24,14 +25,14 @@ class Automobile {
     }
     aggiungiChilometri(km) { 
         this.#incrementaContatore();
-        this.chilometraggio += km;
+        this.#chilometraggio += km;
     }
     mostraContatoreChiamate() {
         return this.#contatoreChiamate;
     }
     
     mostraChilometraggio() {
-        console.log(`L'automobile ha percorso ${this.chilometraggio}km`);
+        console.log(`L'automobile ha percorso ${this.#chilometraggio}km`);
     }
     saluta() {
         console.log(`Ciao! Qeust'auto è una ${this.marca} modello ${this.modello}.`);
@@ -45,14 +46,14 @@ class Automobile {
         console.log(`Quest'auto ha ${etaAutomobile} anni.`);
     }
     _controllaChilometri() {
-        if (this.chilometraggio > 100000) {
+        if (this.#chilometraggio > 100000) {
             console.log("Attenzione: l'auto ha superato i 100000 km!");
         }
     }
     static confrontaChilometraggio(auto1, auto2) {
-        if(auto1.chilometraggio >= auto2.chilometraggio) {
+        if(auto1.#chilometraggio >= auto2.#chilometraggio) {
             return `${auto1.marca} ${auto1.modello} ha più chilometri di ${auto2.marca} ${auto2.modello}`;
-        } else if (auto1.chilometraggio <= auto2.chilometraggio) {
+        } else if (auto1.#chilometraggio <= auto2.#chilometraggio) {
             return `${auto2.marca} ${auto2.modello} ha più chilometri di ${auto1.marca} ${auto1.modello}`;
         }
     }
@@ -71,6 +72,7 @@ let risultatoConfronto = Automobile.confrontaChilometraggio(auto1, auto2);
 console.log(risultatoConfronto);
 
 class Elettrica extends Automobile {
+    autonomia = 0;
     constructor(marca, modello, anno, chilometraggio, autonomia) {
         super(marca, modello, anno, chilometraggio);
         this.autonomia = autonomia;
@@ -95,8 +97,7 @@ autoUsata.mostraChilometraggio();
 autoUsata._controllaChilometri();
 
 class Camion extends Automobile {
-    constructor(marca, modello, anno, chilometraggio) {
+    constructor(marca, modello, anno, chilometraggio, caricoMassimo) {
         super(marca, modello, anno, chilometraggio);
     }
 }
-
