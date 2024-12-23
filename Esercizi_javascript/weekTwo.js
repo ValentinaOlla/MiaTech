@@ -97,16 +97,6 @@ autoUsata._controllaChilometri();
 class Camion extends Automobile {
     constructor(marca, modello, anno, chilometraggio) {
         super(marca, modello, anno, chilometraggio);
-        this.caricoMassimo = caricoMassimo;
-        this.caricoAttuale = 0;
-    }
-    descrizione() {
-        console.log(`Questa auto è una ${this.marca} modello ${this.modello} del ${this.anno}, e ha un'autonomia di ${this.autonomia}km. Il suo carico massimo è di ${this.caricoMassimo}kg`);
-    }
-    carica(kg) {
-        if (kg <= this.caricoMassimo - this.caricoAttuale) {
-        this.caricoAttuale += kg;
-        }
     }
 }
 
