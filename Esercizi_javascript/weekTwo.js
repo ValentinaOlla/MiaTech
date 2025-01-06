@@ -34,9 +34,7 @@ class Automobile {
     mostraChilometraggio() {
         console.log(`L'automobile ha percorso ${this.#chilometraggio}km`);
     }
-    saluta() {
-        console.log(`Ciao! Qeust'auto è una ${this.marca} modello ${this.modello}.`);
-    }
+    
     #calcolaEta() {
         const annoCorrente = new Date().getFullYear();
         return annoCorrente - this.anno;
@@ -64,6 +62,10 @@ class Automobile {
             return `L'oggetto non è un'istanza di ${classe.name}`;
         }
     }
+}
+
+Automobile.prototype.saluta = function() {
+    console.log(`Ciao! Qeust'auto è una ${this.marca} modello ${this.modello}.`);
 }
 
 let Volkswagen = new Automobile("Volkswagen", "Maggiolino", "1938");
