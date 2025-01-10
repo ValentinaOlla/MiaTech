@@ -35,5 +35,5 @@ let frigorifero = {
     classe: "a+"
 }
 
-const {marca, modello, classe} = frigorifero
-console.log(marca, modello, classe);
+const {marca: brand, modello: model, classe: category} = frigorifero
+console.log(brand, model, category);
