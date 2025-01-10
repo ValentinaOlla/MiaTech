@@ -11,28 +11,23 @@ let squaredNumbers = numbers.map(function(element) {
 console.log(squaredNumbers);
 
 //filter & find
-let students = [
-    student1 = {
+let students = [{
         name: "Gabriele",
         grade: "58"
-    },
-    student2 = {
+    }, {
         name: "Giovanna",
         grade: "63"
-    },
-    student3 = {
+    }, {
         name: "Andrea",
         grade: "78"
-    },
-    student4 = {
+    }, {
         name: "Ylenia",
         grade: "60"
-    },
-    student5 = {
+    }, {
         name: "Cristiano",
         grade: "42"
-    }
-];
+    }];
+    
 console.log(students)
 
 let passedStudents = students.filter(student => student.grade >= 60)
