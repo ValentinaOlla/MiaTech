@@ -28,3 +28,12 @@ console.log(a, c);
 let marche = ["gucci", "prada", "versace"]
 const [scarpe, borse, abiti, occhiali = "rayban", accessori = "stroili"] = marche
 console.log(scarpe, borse, abiti, occhiali, accessori);
+
+let frigorifero = {
+    marca: "whirlpool",
+    modello: "WHC20",
+    classe: "a+"
+}
+
+const {marca, modello, classe} = frigorifero
+console.log(marca, modello, classe);
