@@ -10,7 +10,33 @@ let squaredNumbers = numbers.map(function(element) {
 
 console.log(squaredNumbers);
 
+//filter & find
+let students = [{
+    name: "Gabriele",
+    grade: "58"
+}, {
+    name: "Giovanna",
+    grade: "63"
+}, {
+    name: "Andrea",
+    grade: "78"
+}, {
+    name: "Ylenia",
+    grade: "60"
+}, {
+    name: "Cristiano",
+    grade: "42"
+}];
 
+console.log(students)
+
+let passedStudents = students.filter(student => student.grade >= 60)
+function findFailedStudent(student) {
+return student.grade < 60
+}
+let failedStudent = students.find(student => student.grade < 60)
+
+console.log(passedStudents, failedStudent);
 
 //Reduce & sort
 const expences = [1.49, 0.98, 3.65, 7.9]
