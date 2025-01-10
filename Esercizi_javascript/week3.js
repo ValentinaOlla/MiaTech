@@ -82,5 +82,10 @@ const {tipologia, tessuto, ...rest } = divano
 console.log(tipologia, tessuto);
 console.log(rest);
 
-
+let indirizzo = {
+    via: "Roma",
+    civico: 1,
+    cap:"00042" 
+}
+console.log(JSON.stringify(indirizzo));
 
