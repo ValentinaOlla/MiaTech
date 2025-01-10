@@ -67,5 +67,8 @@ const [primo, secondo, ...rest] = chapters
 console.log(primo, secondo);
 console.log(rest);
 
+const somma = (a, b, c) => a + b + c
+let addendi = [14, 5, 73]
+console.log(somma(...addendi));
 
 
