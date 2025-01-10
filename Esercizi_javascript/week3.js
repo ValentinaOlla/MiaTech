@@ -62,5 +62,10 @@ let banana2 = {...banana, prezzo: "9,27"}
 console.log(banana);
 console.log(banana2);
 
+const chapters = [12, 37, 59, 74, 88]
+const [primo, secondo, ...rest] = chapters
+console.log(primo, secondo);
+console.log(rest);
+
 
 
