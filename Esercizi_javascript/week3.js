@@ -37,3 +37,12 @@ let frigorifero = {
 
 const {marca: brand, modello: model, classe: category} = frigorifero
 console.log(brand, model, category);
+
+let caparezza = {
+    nome: "Michele",
+    cognome: "Salvemini",
+    età: 51
+}
+
+const {nome, cognome, età, città = "Molfetta", genere = "Reggae"} = caparezza
+console.log(nome, cognome, età, città, genere);
