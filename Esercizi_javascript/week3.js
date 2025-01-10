@@ -21,4 +21,7 @@ console.log(string);
 console.log(array);
 console.log(obj);
 
+let numbers = [19, 25, 38, 44 ]
+const [a, b, c, d] = numbers
+console.log(a, b);
 
