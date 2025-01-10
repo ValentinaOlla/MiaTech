@@ -25,3 +25,6 @@ let numbers = [19, 25, 38, 44 ]
 const [a, , c, d] = numbers
 console.log(a, c);
 
+let marche = ["gucci", "prada", "versace"]
+const [scarpe, borse, abiti, occhiali = "rayban", accessori = "stroili"] = marche
+console.log(scarpe, borse, abiti, occhiali, accessori);
