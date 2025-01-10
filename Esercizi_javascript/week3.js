@@ -46,3 +46,10 @@ let caparezza = {
 
 const {nome, cognome, età, città = "Molfetta", genere = "Reggae"} = caparezza
 console.log(nome, cognome, età, città, genere);
+
+let numeriDispari = [1, 5, 9, 11]
+let numeriDispari2 = [...numeriDispari]
+console.log(numeriDispari);
+console.log(numeriDispari2);
+
+
