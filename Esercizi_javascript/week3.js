@@ -89,3 +89,9 @@ let indirizzo = {
 }
 console.log(JSON.stringify(indirizzo));
 
+const json = '{"nickname":"valu", "email":"gmail", "genere":"F"}'
+console.log(json);
+
+const oggetto = JSON.parse(json)
+console.log(oggetto);
+
