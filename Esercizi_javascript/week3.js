@@ -20,3 +20,5 @@ console.log(number);
 console.log(string);
 console.log(array);
 console.log(obj);
+
+
