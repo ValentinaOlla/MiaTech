@@ -52,5 +52,15 @@ let numeriDispari = [1, 3, 5, 7, 9,]
 let tuttiNumeri = [...numeriDispari, ...numeriPari]
 console.log(tuttiNumeri);
 
+let banana = {
+    colore: "giallo",
+    sapore: "dolce",
+    paese: "Malesia"
+}
+
+let banana2 = {...banana, prezzo: "9,27"}
+console.log(banana);
+console.log(banana2);
+
 
 
