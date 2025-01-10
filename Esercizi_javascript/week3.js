@@ -62,13 +62,25 @@ let banana2 = {...banana, prezzo: "9,27"}
 console.log(banana);
 console.log(banana2);
 
-const chapters = [12, 37, 59, 74, 88]
+/*const chapters = [12, 37, 59, 74, 88]
 const [primo, secondo, ...rest] = chapters
 console.log(primo, secondo);
-console.log(rest);
+console.log(rest);*/
 
 const somma = (a, b, c) => a + b + c
 let addendi = [14, 5, 73]
 console.log(somma(...addendi));
+
+let divano = {
+    tipologia: "divanoletto",
+    tessuto: "scamosciato",
+    altezza: 120,
+    larghezza: 80,
+    lunghezza: 190
+}
+const {tipologia, tessuto, ...rest } = divano
+console.log(tipologia, tessuto);
+console.log(rest);
+
 
 
