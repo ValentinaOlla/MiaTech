@@ -8,6 +8,21 @@ if (civico === 35) {
     console.log("Il civico è corretto.");
 }
 
+let teamSincroIta = [{
+    name: "Linda",
+    surname: "Cerruti"
+}, {
+    name: "Marta",
+    surname: "Iacoacci"
+}, {
+    name: "Sofia",
+    surname: "Mastroianni"
+}]
+
+console.group()
+console.table(teamSincroIta)
+console.log(teamSincroIta)
+
 /*function accettaPersona(persona) {
     return `Lei si chiama ${persona.nome} ${persona.cognome} e di professione fa l'${persona.lavoro}.`;
 }
