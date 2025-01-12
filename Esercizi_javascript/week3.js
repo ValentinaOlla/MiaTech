@@ -1,4 +1,17 @@
-let civico = 37;
+setTimeout(saluti, 3000);
+function saluti() {
+    console.log("Arrivederci!");
+}
+
+
+
+
+
+
+
+
+
+/*let civico = 37;
 
 if (civico === 35) {
     console.error("Errore: il civico è sbagliato!");
@@ -23,7 +36,7 @@ console.group()
 console.table(teamSincroIta)
 console.log(teamSincroIta)
 
-/*function accettaPersona(persona) {
+function accettaPersona(persona) {
     return `Lei si chiama ${persona.nome} ${persona.cognome} e di professione fa l'${persona.lavoro}.`;
 }
 
