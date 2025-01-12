@@ -1,4 +1,10 @@
-function saluta() {
+try {
+    divisionePerZero();
+} catch(e) {
+    console.error("Non puoi dividere per zero")
+}
+
+/*function saluta() {
     console.log("Benvenuto!");
 }
 
@@ -9,8 +15,8 @@ setTimeout(() => {
     clearInterval(intervallo);
     console.log('Intervallo fermato.');
     }, tempoDiFermata);
-    
-/*let civico = 37;
+
+let civico = 37;
 
 if (civico === 35) {
     console.error("Errore: il civico è sbagliato!");
