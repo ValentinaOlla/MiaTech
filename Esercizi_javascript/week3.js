@@ -1,5 +1,15 @@
+function saluta() {
+    console.log("Benvenuto!");
+}
 
+const intervallo = setInterval(saluta, 1000);
+const tempoDiFermata = 5000;
 
+setTimeout(() => {
+    clearInterval(intervallo);
+    console.log('Intervallo fermato.');
+    }, tempoDiFermata);
+    
 /*let civico = 37;
 
 if (civico === 35) {
