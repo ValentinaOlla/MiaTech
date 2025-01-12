@@ -1,4 +1,6 @@
-let name = "Valentina"
+
+
+/*let name = "Valentina"
 let surname = "Olla"
 let age = 36
 let city = "Perugia"
@@ -7,7 +9,7 @@ console.log(`Ciao, io sono ${name} ${surname}.
     Lo scorso dicembre ho compiuto ${age} anni,
     e da pochissimi mesi mi sono trasferita a ${city}.`);
 
-/*let number = 25
+let number = 25
 let string = "This is a string"
 let array = ["case", "libri", "auto", "viaggi"]
 let obj = {
@@ -19,7 +21,7 @@ let obj = {
 console.log(number);
 console.log(string);
 console.log(array);
-console.log(obj);*/
+console.log(obj);
 
 let numbers = [19, 25, 38, 44 ]
 const [a, , c, d] = numbers
@@ -65,7 +67,7 @@ console.log(banana2);
 /*const chapters = [12, 37, 59, 74, 88]
 const [primo, secondo, ...rest] = chapters
 console.log(primo, secondo);
-console.log(rest);*/
+console.log(rest);
 
 const somma = (a, b, c) => a + b + c
 let addendi = [14, 5, 73]
@@ -101,5 +103,5 @@ console.log(array);
 
 array.push({nome: "Max", cognome: "Gazzè"});
 const updatedArray = JSON.stringify(array)
-console.log(updatedArray);
+console.log(updatedArray);*/
 
