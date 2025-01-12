@@ -1,10 +1,4 @@
-let civico = 37;
 
-if (civico === 35) {
-    console.error("Errore: il civico è sbagliato!");
-} else if (civico > 37) {
-    console.warn("Attenzione: il civico potrebbe essere sbagliato");
-}
 
 /*function accettaPersona(persona) {
     return `Lei si chiama ${persona.nome} ${persona.cognome} e di professione fa l'${persona.lavoro}.`;
