@@ -1,4 +1,12 @@
-function accettaPersona(persona) {
+let civico = 37;
+
+if (civico === 35) {
+    console.error("Errore: il civico è sbagliato!");
+} else if (civico > 37) {
+    console.warn("Attenzione: il civico potrebbe essere sbagliato");
+}
+
+/*function accettaPersona(persona) {
     return `Lei si chiama ${persona.nome} ${persona.cognome} e di professione fa l'${persona.lavoro}.`;
 }
 
@@ -12,7 +20,7 @@ const frase = accettaPersona(persona);
 console.log(frase);
 
 
-/*let name = "Valentina"
+let name = "Valentina"
 let surname = "Olla"
 let age = 36
 let city = "Perugia"
