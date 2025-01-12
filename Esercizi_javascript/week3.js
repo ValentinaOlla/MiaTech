@@ -1,3 +1,15 @@
+function accettaPersona(persona) {
+    return `Lei si chiama ${persona.nome} ${persona.cognome} e di professione fa l'${persona.lavoro}.`;
+}
+
+let persona = {
+    nome: "Samantha",
+    cognome: "Cristoforetti",
+    lavoro: "Astronauta"
+}
+
+const frase = accettaPersona(persona);
+console.log(frase);
 
 
 /*let name = "Valentina"
