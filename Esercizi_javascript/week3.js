@@ -7,7 +7,7 @@ console.log(`Ciao, io sono ${name} ${surname}.
     Lo scorso dicembre ho compiuto ${age} anni,
     e da pochissimi mesi mi sono trasferita a ${city}.`);
 
-let number = 25
+/*let number = 25
 let string = "This is a string"
 let array = ["case", "libri", "auto", "viaggi"]
 let obj = {
@@ -19,7 +19,7 @@ let obj = {
 console.log(number);
 console.log(string);
 console.log(array);
-console.log(obj);
+console.log(obj);*/
 
 let numbers = [19, 25, 38, 44 ]
 const [a, , c, d] = numbers
@@ -94,4 +94,12 @@ console.log(json);
 
 const oggetto = JSON.parse(json)
 console.log(oggetto);
+
+let singers = '[{"nome":"Carmen", "cognome":"Consoli"}, {"nome":"Daniele", "cognome":"Silvestri"}]'
+const array = JSON.parse(singers)
+console.log(array);
+
+array.push({nome: "Max", cognome: "Gazzè"});
+const updatedArray = JSON.stringify(array)
+console.log(updatedArray);
 
