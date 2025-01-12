@@ -1,18 +1,3 @@
-setTimeout(saluti, 3000);
-function saluti() {
-    console.log("Arrivederci!");
-}
-
-let contatore = 0;
-setInterval(conta, 2000);
-function conta() {
-    console.log(contatore++ );
-}
-
-
-
-
-
 
 
 /*let civico = 37;
