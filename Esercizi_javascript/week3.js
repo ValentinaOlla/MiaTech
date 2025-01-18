@@ -16,6 +16,29 @@ processString("88");
 processString("dodici");
 processString(true);
 
+//Uso di finally
+function dividiNumeri(numeratore, denominatore) {
+    try {
+        if (isNaN(numeratore) || isNaN(denominatore)) {
+            throw new Error("Entrambi i parametri devono essere numeri.");
+        }
+        if (denominatore === 0) {
+            throw new Error("Errore: divisione per zero.");
+        }
+        const risultato = numeratore / denominatore;
+    console.log("Il risultato della divisione è:", risultato);
+    
+  } catch (error) {
+    console.error("Si è verificato un errore:", error.message);
+  } finally {
+    console.log("Operazione completata.");
+  }
+}
+
+dividiNumeri(42, 7);
+dividiNumeri(13, 0);
+dividiNumeri(24, "blablablba")
+
 /*function saluta() {
     console.log("Benvenuto!");
 }
