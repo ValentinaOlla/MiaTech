@@ -1,4 +1,29 @@
-//Catena di promesse con condizioni
+//Catena con gestione degli errori
+function nuovaPromessa() {
+    return new Promise((resolve, reject) => {
+        const random = Math.random();
+        setTimeout(() => {
+            if(random < 0.7) {
+                resolve("Ok");
+            } else {
+                reject(new Error("Errore"));
+            }
+        }, 1000);
+    });
+}
+
+nuovaPromessa() .then((result) => {
+    const risolto = result + "(operazione risolta)";
+    return risolto;
+}) .then((risultatoModificato) => {
+    console.log("Risultato manipolato: ", risultatoModificato);
+})
+.catch((error) => {
+    console.error(error.message);
+})
+
+
+/*//Catena di promesse con condizioni
 function catenaCondizionata() {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -18,7 +43,7 @@ catenaCondizionata() .then((numero) => {
 
 
 
-/*//Catena di promesse
+//Catena di promesse
 function catenaDiOperazioni() {
     return new Promise((resolve) => {
         setTimeout(() => {
