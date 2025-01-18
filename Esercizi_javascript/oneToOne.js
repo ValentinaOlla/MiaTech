@@ -21,3 +21,17 @@ function saluta(a, b) {
     }
 }
 saluta("Ciao", "Arrivederci")
+
+
+//Callback
+
+function operazioneSemplice (a, b, callback) {
+    console.log(a + b)
+    callback()
+}
+
+operazioneSemplice(20, 30, function() {
+    console.log("callback eseguita")
+})
+
+
