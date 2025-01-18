@@ -1,10 +1,20 @@
-//Creare un blocco try e uno catch
-
-try {
-    divisionePerZero();
-} catch(e) {
-    console.error("Non puoi dividere per zero")
+//Gestione di più tipi di errori
+function processString(str) {
+    try {
+        const numero = Number(str);
+        if (isNaN(numero)) {
+            throw new Error("La stringa non è un numero.");
+        }
+        const risultato = numero * 2;
+        console.log("Il risultato è:", risultato);
+    } catch (error) {
+        console.error("Errore:", error.message);
+    }
 }
+
+processString("88");
+processString("dodici");
+processString(true);
 
 /*function saluta() {
     console.log("Benvenuto!");
