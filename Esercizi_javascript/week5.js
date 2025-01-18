@@ -1,4 +1,20 @@
+//Catena di promesse
+function catenaDiOperazioni() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const numero = 12;
+            resolve(numero);
+        }, 1000);
+    });
+}
 
+catenaDiOperazioni() .then((numero) => {
+    return numero * 2;
+}) .then((numeroMoltiplicato) => {
+    return numeroMoltiplicato + 3;
+}) .then((risultato) => {
+    console.log("Il risultato è: ", risultato);
+});
 
 
 
