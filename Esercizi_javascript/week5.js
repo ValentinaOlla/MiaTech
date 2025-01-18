@@ -1,4 +1,8 @@
-//Creare una promessa semplice
+
+
+
+
+/*Creare una promessa semplice
 
 function promessaSemplice(messaggio) {
     return new Promise((resolve, reject) => {
@@ -22,7 +26,7 @@ function promessaSemplice(messaggio) {
     console.error("Si è verificato un errore: ", error.message);
   });
 
-//Promessa con finally
+Promessa con finally
 function secondaPromessa() {
     return new Promise((resolve, reject) => {
         const random = Math.random();
@@ -41,6 +45,4 @@ function secondaPromessa() {
 secondaPromessa()
 .then(result => console.log(result))
 .catch(error => console.error(error))
-.finally(() => console.log('Operazione completata'));
-
-
+.finally(() => console.log('Operazione completata'));*/
