@@ -1,4 +1,24 @@
-//Catena di promesse
+//Catena di promesse con condizioni
+function catenaCondizionata() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            let numero = 33;
+            resolve(numero);
+        }, 1000);
+    });
+}
+
+catenaCondizionata() .then((numero) => {
+    if(numero % 2 === 0) {
+        console.log("Il numero è pari")
+    } else {
+        console.log("Il numero è dispari")
+    }
+})
+
+
+
+/*//Catena di promesse
 function catenaDiOperazioni() {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -18,7 +38,7 @@ catenaDiOperazioni() .then((numero) => {
 
 
 
-/*Creare una promessa semplice
+Creare una promessa semplice
 
 function promessaSemplice(messaggio) {
     return new Promise((resolve, reject) => {
