@@ -1,3 +1,5 @@
+//Creare un blocco try e uno catch
+
 try {
     divisionePerZero();
 } catch(e) {
