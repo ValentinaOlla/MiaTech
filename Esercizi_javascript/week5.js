@@ -1,4 +1,28 @@
-//Gestione degli errori con catch
+//Gestione degli errori in una catena di promesse
+function pCasuale() {
+    return new Promise((resolve, reject) => {
+        const random = Math.random();
+        if(random > 0.5) {
+            resolve("Tutto bene");
+        } else {
+            reject(new Error("qualcosa non va"));
+        }
+    });
+  }
+  
+  pCasuale()
+  .then((messaggio1) => {
+    console.log(messaggio1);
+    return `${messaggio1} -> Prima operazione completata`;
+  })
+  .then((messaggio2) => {
+    console.log(messaggio2);
+  })
+  .catch((error) => {
+    console.error("Si è verificato un errore: ", error.message);
+  });
+
+/*//Gestione degli errori con catch
 function tuNo() {
     return new Promise((resolve, reject) => {
         reject("Errore: tu non puoi passare!");
@@ -9,10 +33,7 @@ tuNo().catch((messaggio) => {
     console.error(messaggio);
 });
 
-
-
-
-/*//Funzioni asincrone in serie
+//Funzioni asincrone in serie
 async function asincrona1() {
     return new Promise((resolve) => {
         setTimeout(() => {
