@@ -16,7 +16,7 @@ function secondaFunzione() {
     });
 }
 
-Promise.all([primaFunzione(), secondaFunzione()]) 
+Promise.race([primaFunzione(), secondaFunzione()]) 
     .then(results => {
         console.log(results)
     });
