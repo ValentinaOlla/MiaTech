@@ -1,4 +1,32 @@
-//Funzione asincrona semplice
+//Funzioni asincrone in serie
+async function asincrona1() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Sono la prima");
+        }, 1000);
+    });
+}
+
+async function asincrona2() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Sono la seconda");
+        }, 2000);
+    });
+}
+
+async function asincrona3() {
+    const result1 = await asincrona1();
+    const result2 = await asincrona2();
+    const result = result1 + ", " + result2;
+    console.log(result);    
+}
+
+asincrona3()
+
+
+
+/*//Funzione asincrona semplice
 function ennesimaFunzione() {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -14,7 +42,7 @@ async function primaAsincrona() {
 
 primaAsincrona()
 
-/*//Metodo Promise.allSettled
+//Metodo Promise.allSettled
 
 function primaFunzione() {
     return new Promise((resolve) => {
