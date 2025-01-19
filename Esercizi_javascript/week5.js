@@ -1,4 +1,28 @@
-//Catena con gestione degli errori
+//Metodo Promise.all
+
+function primaFunzione() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Prima");
+        }, 2000);
+    });
+}
+
+function secondaFunzione() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Seconda");
+        }, 1000);
+    });
+}
+
+Promise.all([primaFunzione(), secondaFunzione()]) 
+    .then(results => {
+        console.log(results)
+    });
+
+
+/*//Catena con gestione degli errori
 function nuovaPromessa() {
     return new Promise((resolve, reject) => {
         const random = Math.random();
@@ -23,7 +47,7 @@ nuovaPromessa() .then((result) => {
 })
 
 
-/*//Catena di promesse con condizioni
+//Catena di promesse con condizioni
 function catenaCondizionata() {
     return new Promise((resolve) => {
         setTimeout(() => {
