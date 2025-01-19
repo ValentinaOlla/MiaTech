@@ -1,4 +1,12 @@
-//Eseguire una richiesta GET semplice
+//Comprendere un errore CORS
+fetch('https://api-free.deepl.com/')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
+
+
+/*//Eseguire una richiesta GET semplice
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
     .then(data => {
@@ -6,7 +14,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     });
 
 
-/*//Gestione degli errori in una catena di promesse
+//Gestione degli errori in una catena di promesse
 function pCasuale() {
     return new Promise((resolve, reject) => {
         const random = Math.random();
