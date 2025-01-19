@@ -1,4 +1,4 @@
-//Metodo Promise.all
+//Metodo Promise.allSettled
 
 function primaFunzione() {
     return new Promise((resolve) => {
@@ -16,7 +16,15 @@ function secondaFunzione() {
     });
 }
 
-Promise.race([primaFunzione(), secondaFunzione()]) 
+function terzaFunzione() {
+    return new Promise((reject) => {
+        setTimeout(() => {
+            reject("Errore");
+        }, 1500);
+    });
+}
+
+Promise.allSettled([primaFunzione(), secondaFunzione(), terzaFunzione()]) 
     .then(results => {
         console.log(results)
     });
