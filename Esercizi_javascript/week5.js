@@ -1,4 +1,20 @@
-//Metodo Promise.allSettled
+//Funzione asincrona semplice
+function ennesimaFunzione() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("La funzione si risolve dopo due secondi");
+        }, 2000);
+    });
+}
+
+async function primaAsincrona() {
+    const result = await ennesimaFunzione();
+    console.log(result);
+}
+
+primaAsincrona()
+
+/*//Metodo Promise.allSettled
 
 function primaFunzione() {
     return new Promise((resolve) => {
@@ -30,7 +46,7 @@ Promise.allSettled([primaFunzione(), secondaFunzione(), terzaFunzione()])
     });
 
 
-/*//Catena con gestione degli errori
+//Catena con gestione degli errori
 function nuovaPromessa() {
     return new Promise((resolve, reject) => {
         const random = Math.random();
