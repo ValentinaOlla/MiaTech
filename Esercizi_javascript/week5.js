@@ -1,4 +1,18 @@
-//Funzioni asincrone in serie
+//Gestione degli errori con catch
+function tuNo() {
+    return new Promise((resolve, reject) => {
+        reject("Errore: tu non puoi passare!");
+    });
+}
+
+tuNo().catch((messaggio) => {
+    console.error(messaggio);
+});
+
+
+
+
+/*//Funzioni asincrone in serie
 async function asincrona1() {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -26,7 +40,7 @@ asincrona3()
 
 
 
-/*//Funzione asincrona semplice
+//Funzione asincrona semplice
 function ennesimaFunzione() {
     return new Promise((resolve) => {
         setTimeout(() => {
