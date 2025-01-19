@@ -1,4 +1,12 @@
-//Gestione degli errori in una catena di promesse
+//Eseguire una richiesta GET semplice
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
+
+
+/*//Gestione degli errori in una catena di promesse
 function pCasuale() {
     return new Promise((resolve, reject) => {
         const random = Math.random();
@@ -22,7 +30,7 @@ function pCasuale() {
     console.error("Si è verificato un errore: ", error.message);
   });
 
-/*//Gestione degli errori con catch
+//Gestione degli errori con catch
 function tuNo() {
     return new Promise((resolve, reject) => {
         reject("Errore: tu non puoi passare!");
