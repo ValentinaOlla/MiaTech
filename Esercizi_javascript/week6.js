@@ -1,4 +1,6 @@
-const a = "abc"
+console.log(document)
+
+/*const a = "abc"
 const b = 123
 
 function saveDataEverywhere(a, b) {
@@ -31,7 +33,7 @@ deleteFromEverywhere(a, b);
 
 
 
-/*function saveToSS(chiave, valore) {
+function saveToSS(chiave, valore) {
     sessionStorage.setItem(chiave, valore);
     console.log("Salvato: " + chiave + ":" + valore);
 }
