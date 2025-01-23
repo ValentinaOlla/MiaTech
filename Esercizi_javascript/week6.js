@@ -6,6 +6,8 @@ elemento.innerText = "Ciao!";
 elemento.style.fontSize = "30px";
 elemento.style.backgroundColor = "purple";
 
+elemento.innerHTML = "Ciao! " + "<button>Clicca qui</button>";
+
 
 /*console.log(document)
 
