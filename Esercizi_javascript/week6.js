@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+const elemento = document.querySelector("p")
 
 /*console.log(document)
 
