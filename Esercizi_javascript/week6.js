@@ -8,6 +8,9 @@ elemento.style.backgroundColor = "purple";
 
 elemento.innerHTML = "Ciao! " + "<button>Clicca qui</button>";
 
+const ul = document.createElement("ul");
+document.container.appendChild(ul);
+
 
 /*console.log(document)
 
