@@ -1,5 +1,7 @@
 const container = document.getElementById("container");
-const elemento = document.querySelector("p")
+const elemento = document.querySelector("p");
+
+elemento.innerText = "Ciao!";
 
 /*console.log(document)
 
