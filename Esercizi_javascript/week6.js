@@ -1,26 +1,26 @@
-function saveData(chiave, valore) {
-    localStorage.setItem(chiave, valore);
+function saveToSS(chiave, valore) {
+    sessionStorage.setItem(chiave, valore);
     console.log("Salvato: " + chiave + ":" + valore);
 }
 
-function getData(chiave, valore) {
-    const risultato = localStorage.getItem(chiave, valore);
+function getFromSS(chiave, valore) {
+    const risultato = sessionStorage.getItem(chiave, valore);
     console.log("Recuperati i dati: " + chiave + " e " + valore);
     
     return risultato;
 }
 
-function deleteData(chiave) {
-    localStorage.removeItem(chiave);
-    console.log("Rimosso il dato: " + chiave)
+function deleteDataFromSS(chiave) {
+    sessionStorage.removeItem(chiave);
+    console.log("Rimosso il dato: " + chiave);
 }
 
 const chiave = "Esercizio"
-const valore = "Salvare su local storage"
+const valore = "Salvare su sessionStorage"
 
-saveData(chiave, valore);
-getData(chiave, valore);
-deleteData(chiave);
+saveToSS(chiave, valore);
+getFromSS(chiave, valore);
+deleteDataFromSS(chiave);
 
 
 /*function setCookie(name, value) {
