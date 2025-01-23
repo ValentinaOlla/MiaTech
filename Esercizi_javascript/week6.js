@@ -3,6 +3,10 @@ const elemento = document.querySelector("p");
 
 elemento.innerText = "Ciao!";
 
+elemento.style.fontSize = "30px";
+elemento.style.backgroundColor = "purple";
+
+
 /*console.log(document)
 
 const a = "abc"
