@@ -1,4 +1,29 @@
-function setCookie(name, value) {
+function saveData(chiave, valore) {
+    localStorage.setItem(chiave, valore);
+    console.log("Salvato: " + chiave + ":" + valore);
+}
+
+function getData(chiave, valore) {
+    const risultato = localStorage.getItem(chiave, valore);
+    console.log("Recuperati i dati: " + chiave + " e " + valore);
+    
+    return risultato;
+}
+
+function deleteData(chiave) {
+    localStorage.removeItem(chiave);
+    console.log("Rimosso il dato: " + chiave)
+}
+
+const chiave = "Esercizio"
+const valore = "Salvare su local storage"
+
+saveData(chiave, valore);
+getData(chiave, valore);
+deleteData(chiave);
+
+
+/*function setCookie(name, value) {
     const date = new Date();
     date.setTime(date.getTime() + 24*60*60*1000);
     let expires = "expires=" + date.toUTCString();
@@ -32,4 +57,4 @@ function deleteCookie(name) {
 }
 
 deleteCookie("Esercizio-cookie");
-console.log(document.cookie);
+console.log(document.cookie);*/
