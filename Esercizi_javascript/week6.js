@@ -1,4 +1,4 @@
-const container = document.getElementById("container");
+
 const elemento = document.querySelector("p");
 
 elemento.innerText = "Ciao!";
@@ -8,8 +8,16 @@ elemento.style.backgroundColor = "purple";
 
 elemento.innerHTML = "Ciao! " + "<button>Clicca qui</button>";
 
+const container = document.getElementById("container");
+
 const ul = document.createElement("ul");
-document.container.appendChild(ul);
+container.appendChild(ul);
+
+for (let i = 1; i <= 5; i++) {
+    const li = document.createElement("li");
+    li.textContent = "Elemento" + i;
+    ul.appendChild(li);
+}
 
 
 /*console.log(document)
