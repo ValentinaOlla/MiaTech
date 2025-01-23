@@ -1,6 +1,8 @@
-console.log(document)
+const container = document.getElementById("container");
 
-/*const a = "abc"
+/*console.log(document)
+
+const a = "abc"
 const b = 123
 
 function saveDataEverywhere(a, b) {
