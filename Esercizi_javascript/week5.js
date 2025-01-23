@@ -1,5 +1,5 @@
-//Comprendere un errore CORS
-fetch('https://api-free.deepl.com/')
+//Utilizzare API che supporta CORS
+fetch('https://www.coingecko.com/api/documentation')
     .then(response => response.json())
     .then(data => {
         console.log(data);
