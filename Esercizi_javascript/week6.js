@@ -1,4 +1,37 @@
-function saveToSS(chiave, valore) {
+const a = "abc"
+const b = 123
+
+function saveDataEverywhere(a, b) {
+    localStorage.setItem(a, b);
+    console.log("Salvato nel localStorage: " + a + " e " + b);
+
+    sessionStorage.setItem(a, b);
+    console.log("Salvato nel sessionStorage: " + a + " e " + b);
+}
+
+function getFromEverywhere(a, b) {
+    const lsValue = localStorage.getItem(a);
+    console.log("Recuperato il dato: " + lsValue);
+
+    const ssValue = sessionStorage.getItem(b);
+    console.log("Recuperato dato: " + ssValue);
+}
+
+function deleteFromEverywhere(a, b) {
+    localStorage.removeItem(a);
+    console.log("Eliminato il dato: " + a);
+
+    sessionStorage.removeItem(b);
+    console.log("Eliminato il dato: " + b);
+}
+
+saveDataEverywhere(a, b);
+getFromEverywhere(a, b);
+deleteFromEverywhere(a, b);
+
+
+
+/*function saveToSS(chiave, valore) {
     sessionStorage.setItem(chiave, valore);
     console.log("Salvato: " + chiave + ":" + valore);
 }
@@ -23,7 +56,7 @@ getFromSS(chiave, valore);
 deleteDataFromSS(chiave);
 
 
-/*function setCookie(name, value) {
+function setCookie(name, value) {
     const date = new Date();
     date.setTime(date.getTime() + 24*60*60*1000);
     let expires = "expires=" + date.toUTCString();
