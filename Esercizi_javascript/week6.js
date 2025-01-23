@@ -12,23 +12,7 @@ for (let i = 1; i <= 5; i++) {
     ul.appendChild(li);
 }
 
-const userForm = document.getElementById("userForm");
-const nameInput = document.getElementById("name");
-const surnameInput = document.getElementById("surname");
 
-userForm.addEventListener("submit", event => {
-    event.preventDefault();
-   
-    const name = nameInput.value.trim();
-    const surname = surnameInput.value.trim();
-   
-    if (!name || !surname) {
-     alert('Tutti i campi sono obbligatori!');
-     return;
-   }
-   alert('Form inviato con successo!');
-  userForm.submit();
-});
 
 
 /*console.log(document)
