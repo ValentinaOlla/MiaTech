@@ -1,4 +1,16 @@
-//Eseguire una richiesta POST
+//Gestione degli errori con async e await
+async function asincrona() {
+    try {
+        const result = await fetch("https://ubahthebuilder.tech/posts/1");
+        console.log(result)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+asincrona();
+
+/*//Eseguire una richiesta POST
 const update = {
     title: "I post migliori di Kingsley",
     body: "Recupero post con fetch API",
@@ -25,7 +37,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", options)
         console.log(e);
         });
 
-/*//Gestione degli errori con then e catch
+//Gestione degli errori con then e catch
 
 function b(isResolved) {
     return new Promise((resolve, reject) => {
