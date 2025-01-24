@@ -1,4 +1,6 @@
-//Utilizzare API che supporta CORS
+
+
+/*//Utilizzare API che supporta CORS
 fetch('https://www.coingecko.com/api/documentation')
     .then(response => response.json())
     .then(data => {
@@ -6,7 +8,7 @@ fetch('https://www.coingecko.com/api/documentation')
     });
 
 
-/*//Eseguire una richiesta GET semplice
+//Eseguire una richiesta GET semplice
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
     .then(data => {
