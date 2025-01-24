@@ -1,4 +1,23 @@
-//Gestione degli errori con async e await
+//Utilizzare un API che supporta CORS
+fetch('https://api.thecatapi.com/v1/images/search')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dati ricevuti:', data);
+    const img = document.createElement('img');
+    img.src = data[0].url;
+    img.alt = 'Immagine di un gatto';
+    document.body.appendChild(img);
+  })
+  .catch(error => {
+    console.error('Errore nella richiesta:', error);
+  });
+
+/*//Gestione degli errori con async e await
 async function asincrona() {
     try {
         const result = await fetch("https://ubahthebuilder.tech/posts/1");
@@ -10,7 +29,7 @@ async function asincrona() {
 
 asincrona();
 
-/*//Eseguire una richiesta POST
+//Eseguire una richiesta POST
 const update = {
     title: "I post migliori di Kingsley",
     body: "Recupero post con fetch API",
