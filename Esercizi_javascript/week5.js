@@ -1,4 +1,31 @@
-//Gestione degli errori con then e catch
+//Eseguire una richiesta POST
+const update = {
+    title: "I post migliori di Kingsley",
+    body: "Recupero post con fetch API",
+    userId: 1,
+    };
+    
+const options = {
+    method: "POST",
+    headers: {
+    "Content-Type": "application/json",
+    },
+    body: JSON.stringify(update),
+    };
+
+fetch("https://jsonplaceholder.typicode.com/posts", options)
+    .then(data => {
+        if (!data.ok) {
+          throw Error(data.status);
+         }
+         return data.json();
+        }).then(update => {
+        console.log(update);
+        }).catch(e => {
+        console.log(e);
+        });
+
+/*//Gestione degli errori con then e catch
 
 function b(isResolved) {
     return new Promise((resolve, reject) => {
@@ -23,7 +50,7 @@ b(false)
     console.error(error)
 })
 
-/*//Gestione degli errori con async e await
+//Gestione degli errori con async e await
 function aspettami(risolta) {
     return new Promise((resolve, reject) => {
         const data = "ok";
