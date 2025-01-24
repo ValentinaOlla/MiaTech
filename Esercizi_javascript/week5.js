@@ -1,4 +1,29 @@
-//Gestione degli errori con async e await
+//Gestione degli errori con then e catch
+
+function b(isResolved) {
+    return new Promise((resolve, reject) => {
+        const data = {
+            name: "Clarc",
+            surname: "Kent",
+            job: "Superhero",
+        };
+        if(isResolved) {
+            resolve(data);
+        } else {
+            reject("Error");
+        }
+    });
+}
+
+b(false)
+.then((result) => {
+    console.log(result)
+})
+.catch((error) => {
+    console.error(error)
+})
+
+/*//Gestione degli errori con async e await
 function aspettami(risolta) {
     return new Promise((resolve, reject) => {
         const data = "ok";
@@ -22,7 +47,7 @@ async function aspetta() {
 
 aspetta();
 
-/*//Utilizzare API che supporta CORS
+//Utilizzare API che supporta CORS
 fetch('https://www.coingecko.com/api/documentation')
     .then(response => response.json())
     .then(data => {
