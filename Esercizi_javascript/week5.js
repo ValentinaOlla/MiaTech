@@ -1,4 +1,23 @@
-//Utilizzare un API che supporta CORS
+//Utilizzare un proxy per bypassare CORS
+const proxy = 'https://cors-anywhere.herokuapp.com/';
+const apiUrl = 'https://randomuser.me/api/';
+
+fetch(proxy + apiUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dati ricevuti tramite proxy:', data);
+  })
+  .catch(error => {
+    console.error('Errore nella richiesta tramite proxy:', error);
+  });
+
+
+/*//Utilizzare un API che supporta CORS
 fetch('https://api.thecatapi.com/v1/images/search')
   .then(response => {
     if (!response.ok) {
@@ -17,7 +36,7 @@ fetch('https://api.thecatapi.com/v1/images/search')
     console.error('Errore nella richiesta:', error);
   });
 
-/*//Gestione degli errori con async e await
+//Gestione degli errori con async e await
 async function asincrona() {
     try {
         const result = await fetch("https://ubahthebuilder.tech/posts/1");
