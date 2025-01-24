@@ -1,4 +1,26 @@
+//Gestione degli errori con async e await
+function aspettami(risolta) {
+    return new Promise((resolve, reject) => {
+        const data = "ok";
 
+        if(risolta) {
+            resolve(data);
+        } else {
+            reject("Errore");
+        }
+    });
+}
+
+async function aspetta() {
+    try {
+        const result = await aspettami(true);
+        console.log(result)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+aspetta();
 
 /*//Utilizzare API che supporta CORS
 fetch('https://www.coingecko.com/api/documentation')
