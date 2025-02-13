@@ -1,7 +1,5 @@
 
-const elemento = document.querySelector("p");
-
-const container = document.getElementById("container");
+/*const elemento = document.querySelector("p");
 
 const ul = document.createElement("ul");
 container.appendChild(ul);
@@ -11,10 +9,6 @@ for (let i = 1; i <= 5; i++) {
     li.textContent = "Elemento" + i;
     ul.appendChild(li);
 }
-
-const userForm = document.getElementById("userForm");
-const nameInput = document.getElementById("name");
-const surnameInput = document.getElementById("surname");
 
 userForm.addEventListener("submit", event => {
     event.preventDefault();
@@ -32,7 +26,7 @@ userForm.addEventListener("submit", event => {
 
 
 
-/*console.log(document)
+console.log(document)
 
 const a = "abc"
 const b = 123
