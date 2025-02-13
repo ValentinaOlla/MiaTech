@@ -1,3 +1,7 @@
+const userForm = document.getElementById("userForm");
+const nameInput = document.getElementById("name");
+const surnameInput = document.getElementById("surname");
+
 
 /*const elemento = document.querySelector("p");
 
