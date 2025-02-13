@@ -1,4 +1,24 @@
-//Gestione di più tipi di errori
+//Gestione di un errore semplice
+
+function divisione(a, b) {
+    try {
+        a / b;
+        console.log("Il risultato è: " + (a / b));
+    } catch (error) {
+        if(b === 0){
+        console.error("C'è un errore");
+        }
+    }
+};
+
+divisione(15, 3);
+divisione(12, 0);
+
+
+
+
+
+/*//Gestione di più tipi di errori
 function processString(str) {
     try {
         const numero = Number(str);
@@ -39,7 +59,7 @@ dividiNumeri(42, 7);
 dividiNumeri(13, 0);
 dividiNumeri(24, "blablablba")
 
-/*function saluta() {
+function saluta() {
     console.log("Benvenuto!");
 }
 
