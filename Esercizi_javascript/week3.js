@@ -1,13 +1,14 @@
-//Gestione di un errore semplice
+//Gestione di un errore semplice: creare script che utilizzi un blocco try per eseguire una divisione e un blocco catch per gestire l'errore se il divisore è 0.
 
 function divisione(a, b) {
     try {
+        if (b == 0) {
+            throw new Error("Non si può dividere per zero");
+        }
         a / b;
         console.log("Il risultato è: " + (a / b));
     } catch (error) {
-        if(b === 0){
-        console.error("C'è un errore");
-        }
+        console.error(error);
     }
 };
 

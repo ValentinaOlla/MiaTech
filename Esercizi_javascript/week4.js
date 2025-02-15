@@ -1,4 +1,4 @@
-//Callback annidati
+//Callback annidati: creare due funzioni che accettano callback e usarle per eseguire operazioni sequenziali. La prima funzione esegue un'operazione e chiama una callback che ne esegue un'altra.
 function somma(a, b, callback) {
     let risultato = a + b;
     console.log("Il risultato della somma è: ", risultato);
