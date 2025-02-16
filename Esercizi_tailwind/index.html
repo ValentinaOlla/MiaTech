@@ -27,17 +27,13 @@
 </head>
 
 <body>
-    <div class="m-4 p-4 bg-thistle shadow-md">
-        <input type="text" placeholder="Cerca" 
-               class="p-2 border-2 border-darkGoldenrod
-                     focus:bg-skyBlue active:border-forestGreen transition">
+    <div class="flex m-4 p-4 bg-thistle shadow-md">
+        <input type="text" placeholder="Nome" class="disabled:bg-slate-200" disabled>
+        <input type="text" placeholder="Cognome" class="disabled:bg-slate-300" disabled>
+        <button class="text-forestGreen border px-4 py-1 cursor-pointer hover:bg-violetRed hover:text-skyBlue disabled:bg-slate-400 disabled:text-violetRed" disabled>Invia</button>
+        
     </div>
 
-    <div class="m-4 p-4">
-    <button class="bg-thistle text-violetRed border px-4 py-1 cursor-pointer hover:bg-forestGreen hover:text-rosyBrown">Bottone 1</button>
-    <button class="bg-rosyBrown text-darkGoldenrod border px-4 py-1 cursor-pointer hover:bg-forestGreen hover:text-thistle">Bottone 2</button>
-    <button class="bg-skyBlue text-forestGreen border px-4 py-1 cursor-pointer hover:bg-violetRed hover:text-skyBlue">Bottone 3</button>
-    </div>
     
     <script src="script.js"></script>
 </body>
