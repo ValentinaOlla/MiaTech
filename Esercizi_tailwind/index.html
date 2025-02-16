@@ -10,12 +10,12 @@
             theme: {
                 extend: {
                     colors: {
-                        myAmber: '#FFBF00',
-                        myBlue: '#6082B6',
-                    },
-                    spacing: {
-                        '12': '3rem',
-                        '16': '4rem',
+                        violetRed: '#D02090',
+                        thistle : '#D8BFD8',
+                        rosyBrown: '#FFC1C1',
+                        darkGoldenrod: '#8B658B',
+                        skyBlue: '#87CEEB',
+                        forestGreen: '#228B22',
                     },
                 },
             },
@@ -24,11 +24,8 @@
 </head>
 
 <body>
-    <div class="bg-amber-500 text-blue-400 m-14 p-10">
-        Questo div utilizza i valori predefiniti di Tailwind.
-    </div>
-    <div class="bg-myAmber text-myBlue m-16 p-12">
-        Questo div invece utilizza i valori configurati da me.
-    </div>
+    <button class="bg-thistle text-violetRed m-1 p-4">Bottone 1</button>
+    <button class="bg-rosyBrown text-darkGoldenrod m-1 p-4">Bottone 2</button>
+    <button class="bg-skyBlue text-forestGreen m-1 p-4">Bottone 3</button>
 </body>
 </html>
