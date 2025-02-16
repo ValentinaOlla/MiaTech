@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -23,14 +24,9 @@
     </script>
 </head>
 
-<body>
-    <header class="text-center p-6 bg-rosyBrown rounded-lg shadow-lg m-auto">
-        <h1 class="text-4xl font-bold text-violetRed">Facciamo un layout</h1>
-    </header>
-    <section class="p-6 bg-thistle text-center shadow-md rounded-lg m-4">
-        <h2 class="text-2xl font-semibold text-darkGoldenrod p-4">Lorem ipsum</h2>
-        <p class="text-lg font-medium text-forestGreen p-4">Laboriosam dolore architecto sint quam labore culpa accusamus, voluptatem soluta eligendi unde temporibus perspiciatis harum natus molestiae est. Doloribus voluptate sed officiis.</p>
-        <a href="#" class="underline font-extrabold text-skyBlue hover:text-violetRed p-12">Sono un link</a>
-    </section>
+<body class="dark">
+    <div class="dark:bg-black dark:text-yellow-500 p-4">
+        Questo div in modalità dark ha lo sfondo nero e il testo giallo.
+    </div>
 </body>
 </html>
