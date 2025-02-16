@@ -13,6 +13,10 @@
                         myAmber: '#FFBF00',
                         myBlue: '#6082B6',
                     },
+                    spacing: {
+                        '12': '3rem',
+                        '16': '4rem',
+                    },
                 },
             },
         }
@@ -20,7 +24,11 @@
 </head>
 
 <body>
-    <div></div>
-    <div></div>
+    <div class="bg-amber-500 text-blue-400 m-14 p-10">
+        Questo div utilizza i valori predefiniti di Tailwind.
+    </div>
+    <div class="bg-myAmber text-myBlue m-16 p-12">
+        Questo div invece utilizza i valori configurati da me.
+    </div>
 </body>
 </html>
