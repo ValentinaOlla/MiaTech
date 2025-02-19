@@ -25,15 +25,11 @@
     
 </head>
 
-<body class="h-screen justify-center">
-    <div class="p-4">
-        <div class="w-full p-4 bg-neutral-300 sm:bg-amber-300 md:bg-orange-400 lg:bg-red-500 xl:bg-rose-400 2xl:bg-pink-500">
-            Guarda il bg cambiare in base alle dimensioni dello schermo!<br>
-        Questo è l'aspetto del box quando le sue dimensioni sono
-        <span class="font-bold after:content-['inferiori'] sm:after:content-['superiori']"></span>
-        a
-        <span class="underline after:content-['640'] sm:after:content-['640'] md:after:content-['768'] lg:after:content-['1024'] xl:after:content-['1280'] 2xl:after:content-['1536']"></span>
-        </div>
+<body class="flex">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 m-5">
+        <div class="bg-teal-400 text-blue-950 border-solid p-4">Uno</div>
+        <div class="bg-teal-500 text-blue-950 border-solid p-4">Due</div>
+        <div class="bg-teal-600 text-blue-950 border-solid p-4">Tre</div>
     </div>
     
     <script src="script.js"></script>
