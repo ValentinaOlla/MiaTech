@@ -22,15 +22,24 @@
             },
         }
     </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn {
+                border: 2px solid purple;
+                padding: 15px;
+                background-color: thistle;
+                color: purple;
+                border-radius: 5px;
+            }
+        }
+    </style>
     
 </head>
 
 <body class="h-screen justify-center">
 
-    <div class="flex flex-col sm:flex-row md:flex-wrap lg:flex-nowrap p-4 gap-4">
-        <div class="bg-slate-500 p-5 text-center">Prima colonna</div>
-        <div class="bg-slate-600 p-5 text-center">Seconda colonna</div>
-        <div class="bg-slate-700 p-5 text-center">Terza colonna</div>
+    <div class="p-4">
+        <button class="btn">Clicca qui</button>
     </div>
 
 
