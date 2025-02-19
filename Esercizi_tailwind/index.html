@@ -26,8 +26,14 @@
 </head>
 
 <body class="h-screen justify-center">
-    <div class="flex">
-
+    <div class="p-4">
+        <div class="w-full p-4 bg-neutral-300 sm:bg-amber-300 md:bg-orange-400 lg:bg-red-500 xl:bg-rose-400 2xl:bg-pink-500">
+            Guarda il bg cambiare in base alle dimensioni dello schermo!<br>
+        Questo è l'aspetto del box quando le sue dimensioni sono
+        <span class="font-bold after:content-['inferiori'] sm:after:content-['superiori']"></span>
+        a
+        <span class="underline after:content-['640'] sm:after:content-['640'] md:after:content-['768'] lg:after:content-['1024'] xl:after:content-['1280'] 2xl:after:content-['1536']"></span>
+        </div>
     </div>
     
     <script src="script.js"></script>
