@@ -25,13 +25,13 @@
     
 </head>
 
-<body class="flex">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 m-5">
-        <div class="bg-teal-400 text-blue-950 border-solid p-4">Uno</div>
-        <div class="bg-teal-500 text-blue-950 border-solid p-4">Due</div>
-        <div class="bg-teal-600 text-blue-950 border-solid p-4">Tre</div>
+<body class="flex justify-center items-center  m-4 p-4">
+    <div>
+    <div class="block md:hidden bg-indigo-400 text-gray-900">Mi puoi vedere solo su mobile</div>
+    <div class="hidden md:block lg:hidden bg-rose-600 text-gray-900">Mi puoi vedere solo sul tablet</div>
+    <div class="hidden lg:block bg-teal-500 text-gray-900">Mi puoi vedere solo sul monitor</div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
