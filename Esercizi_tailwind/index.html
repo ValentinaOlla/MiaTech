@@ -24,12 +24,41 @@
     </script>
     <style type="text/tailwindcss">
         @layer components {
-            .btn {
+            .btn-one {
                 border: 2px solid purple;
-                padding: 15px;
+                margin: 30px;
+                padding: 10px;
                 background-color: thistle;
                 color: purple;
                 border-radius: 5px;
+            }
+            .btn-two {
+                border: 2px solid rgb(0, 128, 15);
+                margin: 30px;
+                padding: 10px;
+                background-color: rgb(191, 216, 193);
+                color: rgb(0, 128, 15);
+                border-radius: 5px;
+            }
+            .card-one {
+                width: 300px;
+                background: #e6e6fa;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(72, 9, 123, 0.3);
+                text-align: center;
+                border: 2px solid #48097b;
+                color: #48097b;
+            }
+            .card-two {
+                width: 300px;
+                background: #e6faee;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(9, 123, 45, 0.3);
+                text-align: center;
+                border: 2px solid #097b0d;
+                color: #097b16;
             }
         }
     </style>
@@ -37,13 +66,17 @@
 </head>
 
 <body class="h-screen justify-center">
-
-    <div class="p-4">
-        <button class="btn">Clicca qui</button>
+    <div class="flex">
+    <div class="card-one m-4">
+        <h2>Sono la prima card</h2>
+        <button class="btn-one">Clicca qui</button>
     </div>
 
-
-
+    <div class="card-two m-4">
+        <h2>Sono la seconda card</h2>
+        <button class="btn-two">Clicca qui</button>
+    </div>
+</div>
     
     <script src="script.js"></script>
 </body>
