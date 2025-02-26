@@ -7,11 +7,16 @@ const handleAddButton = () => {
   setCounter(counter + 1);
 }
 
+const handleDecButton = () => {
+  setCounter(counter - 1);
+}
+
   return (
     <div>
       <p>Count:{counter}</p>
-      <button onClick={handleAddButton}>Add</button>
-    </div>
+      <button onClick={handleDecButton}>-</button>
+      <button onClick={handleAddButton}>+</button>
+      </div>
   )
 };
 
