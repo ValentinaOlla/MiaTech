@@ -1,9 +1,18 @@
 import { useState } from "react";
 
 const App = () => {
-const [] = useState(0);
+const [counter, setCounter] = useState(0);
 
-  return <div>Count: 0</div>;
+const handleAddButton = () => {
+  setCounter(counter + 1);
+}
+
+  return (
+    <div>
+      <p>Count:{counter}</p>
+      <button onClick={handleAddButton}>Add</button>
+    </div>
+  )
 };
 
 export default App;
