@@ -11,11 +11,16 @@ const handleDecButton = () => {
   setCounter(counter - 1);
 }
 
+const handleResetButton = () => {
+  setCounter(0);
+}
+
   return (
     <div>
       <p>Count:{counter}</p>
       <button onClick={handleDecButton}>-</button>
       <button onClick={handleAddButton}>+</button>
+      <button onClick={handleResetButton}>Reset</button>
       </div>
   )
 };
