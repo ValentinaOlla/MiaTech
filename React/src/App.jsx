@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
 const [counter, setCounter] = useState(0);
@@ -14,6 +14,10 @@ const handleDecButton = () => {
 const handleResetButton = () => {
   setCounter(0);
 }
+
+useEffect(() => {
+  document.title = `${counter}`;
+}, [counter]);
 
   return (
     <div>
