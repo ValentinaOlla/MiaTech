@@ -15,10 +15,15 @@ function decrement() {
   })
 }
 
+function reset() {
+  setCounter(0);
+}
+
   return (
     <div>
       <p>Count:{counter}</p>
       <button onClick={decrement}>-</button>
+      <button onClick={reset}>Reset</button>
       <button onClick={increment}>+</button>
       </div>
   )
