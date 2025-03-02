@@ -1,32 +1,13 @@
 import { useState, useEffect } from "react";
+import TextInput from "./TextInput";
 
 const App = () => {
-const [counter, setCounter] = useState(0);
-
-const handleAddButton = () => {
-  setCounter(counter + 1);
-}
-
-const handleDecButton = () => {
-  setCounter(counter - 1);
-}
-
-const handleResetButton = () => {
-  setCounter(0);
-}
-
-useEffect(() => {
-  document.title = `${counter}`;
-}, [counter]);
-
-  return (
-    <div>
-      <p>Count:{counter}</p>
-      <button onClick={handleDecButton}>-</button>
-      <button onClick={handleAddButton}>+</button>
-      <button onClick={handleResetButton}>Reset</button>
-      </div>
-  )
-};
+  
+    return (
+      <>
+        <TextInput />
+      </>
+    )
+  };
 
 export default App;
