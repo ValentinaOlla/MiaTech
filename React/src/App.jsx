@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react";
-import TextInput from "./TextInput";
-import LoginForm from "./LoginForm";
-import UncontrolledInput from "./UncontrolledInput";
-import ItemList from "./ItemList";
+import Card from "./Card";
+import avatar from "./avatar"
 
 const App = () => {
   
     return (
       <>
-        <TextInput />
-        <LoginForm />
-        <UncontrolledInput />
-        <ItemList items={["Viola", "Blu", "Nero"]}/>
+        <Card>
+          <div>
+          <h2>Valentina Olla</h2>
+          <p>Imparo a usare react!</p>
+          <Avatar  />
+          </div>
+        </Card>
       </>
     )
   };
