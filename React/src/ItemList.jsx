@@ -1,0 +1,16 @@
+const ItemList = () => {
+    const items = [""];
+
+    return (
+        <>
+        <ul>
+            {items.map((item, index) => {
+                <li key={`items-${index}`}>{item}</li>
+            })}
+        </ul>
+        </>
+    )
+}
+
+
+export default ItemList;
