@@ -9,10 +9,17 @@ function increment() {
   })
 }
 
+function decrement() {
+  setCounter((_counter) => {
+    return _counter - 1;
+  })
+}
+
   return (
     <div>
       <p>Count:{counter}</p>
-      <button onClick={increment}>Click here</button>
+      <button onClick={decrement}>-</button>
+      <button onClick={increment}>+</button>
       </div>
   )
 };
