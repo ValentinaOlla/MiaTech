@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
 const [counter, setCounter] = useState(0);
@@ -19,13 +19,19 @@ function reset() {
   setCounter(0);
 }
 
+useEffect(() => {
+  document.title = `Count: ${counter}`;
+}, [counter]);
+
   return (
-    <div>
-      <p>Count:{counter}</p>
+    <>
+      <div>Count:{counter}</div>
+      <div>
       <button onClick={decrement}>-</button>
       <button onClick={reset}>Reset</button>
       <button onClick={increment}>+</button>
       </div>
+    </>
   )
 };
 
