@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { useFetch } from "./hooks/useFetch"
+import { useFilteredTodos } from "./hooks/useFilteredTodos";
 
 
 export const ToDoList = () => {
     const { data: todos, error, loading } = useFetch("https://jsonplaceholder.typicode.com/todos");
+    const [searchTerm, setSearchTerm] = useState("");
+    const filteredTodos = useFilteredTodos(todos, searchTerm);
 
     if(loading) return <p>Caricamento dati...</p>
     if(error) return <p>Si è verificato un errore: { error }</p>
@@ -10,8 +14,10 @@ export const ToDoList = () => {
     return (
         <>
         <h2>Lista To-Do</h2>
+        <input type="text" placeholder="Cerca..." value={ searchTerm } onChange={(e) => 
+            setSearchTerm(e.target.value)}/>
         <ul>
-            {todos.map((todo) => (
+            {filteredTodos.map((todo) => (
                 <li key={ todo.id }>{ todo.title } { todo.completed ? "V" : "X" }</li>
             ))}
         </ul>
