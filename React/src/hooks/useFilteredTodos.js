@@ -7,10 +7,10 @@ export const useFilteredTodos = (todos, searchTerm) => {
         if(!todos) return;
 
         const filtered = todos.filter((todo) =>
-        todo.title.toLowerCase().includes(searchTerm.toLowerCase().trim())
-    );
+            todo.title.toLowerCase().includes(searchTerm.toLowerCase().trim())
+        );
 
-    setFilteredTodos(filtered);
+        setFilteredTodos(filtered);
     }, [todos, searchTerm]);
 
     return filteredTodos;
