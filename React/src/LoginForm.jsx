@@ -10,12 +10,9 @@ const LoginForm = () => {
 
     function handlePassword(event) {
         setPassword(event.target.value);
+        console.log(password);
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        alert(`Hai inserito username: ${userName}; password: ${password}.`)
-    }
 
     return (
         <>
@@ -25,9 +22,7 @@ const LoginForm = () => {
             <label>Password: </label>
             <input type="text" value={password} onChange={handlePassword} placeholder="Inserisci password" />
         </div>
-        <div>
-            <button onClick={handleSubmit}>Submit</button>
-        </div>
+        
         </>
     )
 }
