@@ -1,8 +1,8 @@
-export const ItemList = ({items}) => {
+export const ItemList = ({ items = [] }) => {
   return (
     <ul>
-        {items.map((item, index) => (
-            <li key={`items-${index}`}>{item}</li>
+        { items.map((item, index) => (
+            <li key={ `items-${index}` }>{ item }</li>
         ))}
     </ul>
   );
