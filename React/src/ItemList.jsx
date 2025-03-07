@@ -1,4 +1,4 @@
-const ItemList = ({items}) => {
+export const ItemList = ({items}) => {
   return (
     <ul>
         {items.map((item, index) => (
@@ -7,5 +7,3 @@ const ItemList = ({items}) => {
     </ul>
   );
 };
-
-export default ItemList;
