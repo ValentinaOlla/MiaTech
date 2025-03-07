@@ -1,13 +1,19 @@
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef, useEffect, useMemo } from "react";
 import { useFetch } from "./hooks/useFetch"
-import { useFilteredTodos } from "./hooks/useFilteredTodos";
+
 
 
 export const ToDoList = () => {
     const { data: todos, error, loading } = useFetch("https://jsonplaceholder.typicode.com/todos");
     const [searchTerm, setSearchTerm] = useState("");
-    const filteredTodos = useFilteredTodos(todos, searchTerm);
     const inputRef = useRef();
+
+    const filteredTodos = useMemo(() => {
+        if (!todos) return [];
+        return todos.filter(todo => 
+            todo.title.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+    }, [todos, searchTerm]);
 
     useEffect(() => {
         if(filteredTodos.length > 0 ) {
