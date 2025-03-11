@@ -1,8 +1,12 @@
 import { ToDoList } from "./ToDoList";
+import TodoProvider from "./TodoProvider";
 
 export const App = () => {
   
     return (
-        <ToDoList />
+      <TodoProvider>
+          <ToDoList />
+      </TodoProvider>
+        
     );
   }
