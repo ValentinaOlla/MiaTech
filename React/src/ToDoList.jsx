@@ -1,12 +1,14 @@
 import { useState, useCallback, useRef, useEffect, useMemo } from "react";
-import { useFetch } from "./hooks/useFetch"
+import { useTodos } from "./TodoContext";
 
 
 
 export const ToDoList = () => {
-    const { data: todos, error, loading } = useFetch("https://jsonplaceholder.typicode.com/todos");
+    const { data: todos, error, loading } = useTodos();
     const [searchTerm, setSearchTerm] = useState("");
     const inputRef = useRef();
+    
+    console.log("Sono TodoList e ricevo: ", { todos, error, loading })
 
     const filteredTodos = useMemo(() => {
         if (!todos) return [];
@@ -27,6 +29,7 @@ export const ToDoList = () => {
 
     if(loading) return <p>Caricamento dati...</p>
     if(error) return <p>Si è verificato un errore: { error }</p>
+    if(!todos || todos.length === 0) return <p>Non ci sono todo da mostrare.</p>
 
     return (
         <>

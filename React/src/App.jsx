@@ -1,15 +1,11 @@
-import { useState, useEffect } from "react";
 import { ToDoList } from "./ToDoList";
-import LoginForm from "./LoginForm";
+import { TodoProvider } from "./TodoProvider";
 
-const App = () => {
+export const App = () => {
   
     return (
-      <>
-      <LoginForm />
-      <ToDoList />
-      </>
-    )
-  };
-
-export default App;
+      <TodoProvider>
+        <ToDoList />
+      </TodoProvider>
+    );
+  }
