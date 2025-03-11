@@ -6,7 +6,10 @@ export const useFilteredTodos = (todos, searchTerm) => {
     useEffect(() => {
         if(!todos) return;
 
-        
+        if(!searchTerm || searchTerm.trim() === "") {
+            setFilteredTodos(todos);
+            return;
+        }
 
         const filtered = todos.filter((todo) =>
             todo.title.toLowerCase().includes(searchTerm.toLowerCase().trim())
