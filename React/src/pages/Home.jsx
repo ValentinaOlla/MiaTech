@@ -5,8 +5,8 @@ const Home = () => {
 
   return (
     <TodoProvider>
-          <ToDoList />
-      </TodoProvider>
+        <ToDoList />
+    </TodoProvider>
   )
 }
 
