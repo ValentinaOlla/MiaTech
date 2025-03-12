@@ -1,12 +1,13 @@
-import { ToDoList } from "./ToDoList";
-import TodoProvider from "./TodoProvider";
+import { Route, Routes } from "react-router";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 export const App = () => {
   
     return (
-      <TodoProvider>
-          <ToDoList />
-      </TodoProvider>
-        
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+    </Routes>
     );
   }
