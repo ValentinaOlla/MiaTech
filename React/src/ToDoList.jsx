@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef, useEffect, useMemo } from "react";
 import { useTodos } from "./TodoProvider";
+import { Link } from "react-router";
 
 
 export const ToDoList = () => {
@@ -36,7 +37,9 @@ export const ToDoList = () => {
         <input type="text" ref={ inputRef } placeholder="Cerca..." value={ searchTerm } onChange={ handleSearchChanges }/>
         <ul>
             {filteredTodos.map((todo) => (
-                <li key={ todo.id }>{ todo.title } { todo.completed ? "V" : "X" }</li>
+                <li key={ todo.id }>{ todo.title } { todo.completed ? "V" : "X" }
+                <Link to={ `/details/${todo.id}` }> Info </Link>
+                </li>
             ))}
         </ul>
         </>
