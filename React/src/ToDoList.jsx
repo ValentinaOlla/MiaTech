@@ -1,14 +1,14 @@
-import { useState, useCallback, useRef, useEffect, useMemo } from "react";
+import { useCallback, useRef, useEffect, useMemo } from "react";
 import { useTodos } from "./TodoProvider";
-import { Link } from "react-router";
+import { Link, useSearchParams } from "react-router";
 
 
 export const ToDoList = () => {
     const { todos, error, loading } = useTodos();
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchParams, setSearchParams] = useSearchParams();
     const inputRef = useRef();
-    
-    console.log("Sono TodoList e ricevo: ", { todos, error, loading })
+
+    const searchTerm = searchParams.get("search") || "";
 
     const filteredTodos = useMemo(() => {
         if (!todos) return [];
@@ -24,8 +24,8 @@ export const ToDoList = () => {
     }, [filteredTodos]);
     
     const handleSearchChanges = useCallback((event) => {
-        setSearchTerm(event.target.value);
-    }, []);
+        setSearchParams({ search: event.target.value });
+    }, [setSearchParams]);
 
     if(loading) return <p>Caricamento dati...</p>
     if(error) return <p>Si è verificato un errore: { error }</p>
