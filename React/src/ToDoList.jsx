@@ -1,13 +1,12 @@
 import { useCallback, useRef, useEffect, useMemo } from "react";
-import { useTodos } from "./TodoProvider";
 import { Link, useSearchParams } from "react-router";
+import { useSelector } from "react-redux";
 
 
 export const ToDoList = () => {
-    const { todos, error, loading } = useTodos();
+    const todos = useSelector((state) => state.todos.todos);
     const [searchParams, setSearchParams] = useSearchParams();
     const inputRef = useRef();
-
     const searchTerm = searchParams.get("search") || "";
 
     const filteredTodos = useMemo(() => {
