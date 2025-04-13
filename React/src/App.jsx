@@ -5,7 +5,7 @@ import PublicLayout from "./layouts/PublicLayout";
 import Details from "./Details";
 
 import { Provider } from "react-redux";
-import { store } from "./store/index"
+import store from "./store";
 
 export const App = () => {
 
