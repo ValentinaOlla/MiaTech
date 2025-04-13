@@ -1,0 +1,17 @@
+@"
+# Dipendenze
+node_modules/
+dist/
+
+# Environment
+.env
+.env.local
+
+# Editor
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding utf8
