@@ -25,3 +25,7 @@ function assignTodoToUser(todoId: number, userId: number): void {
         console.warn("Todo o user non trovato");
     }
 }
+
+function getUserTodos(userId: number): Todo[] {
+    return todos.filter(todo => todo.userId === userId);
+}
