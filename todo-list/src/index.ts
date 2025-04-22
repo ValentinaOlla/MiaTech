@@ -15,7 +15,7 @@ function addTodo(title: string, metadata?: string | object): Todo {
     if(metadata !== undefined) {
         newTodo.metadata = metadata;
     }
-    
+
     todos.push(newTodo);
     return newTodo;
 }
@@ -47,4 +47,14 @@ function parseInput(input: unknown): string {
     } else {
         return throwError("Questo tipo di input non è valido");
     }
+}
+
+function updateTodo(id: number, update: Partial<Todo>): void {
+    const todo = todos.find(t => t.id === id);
+
+    if(!todo) {
+        console.warn("Todo non trovato");
+        return;
+    }
+    Object.assign(todo, update);
 }
