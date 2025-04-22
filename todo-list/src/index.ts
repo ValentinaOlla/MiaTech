@@ -29,3 +29,7 @@ function assignTodoToUser(todoId: number, userId: number): void {
 function getUserTodos(userId: number): Todo[] {
     return todos.filter(todo => todo.userId === userId);
 }
+
+const throwError = (message?: string): never => {
+    throw new Error(message);
+}
