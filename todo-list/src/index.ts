@@ -5,13 +5,17 @@ const users: User[] = [];
 
 let Id = 1;
 
-function addTodo(title: string, metadata?: any): Todo {
+function addTodo(title: string, metadata?: string | object): Todo {
     const newTodo: Todo = {
         id: Id++,
         title,
         completed: false,
-        ...(metadata !== undefined && { metadata })
     };
+
+    if(metadata !== undefined) {
+        newTodo.metadata = metadata;
+    }
+    
     todos.push(newTodo);
     return newTodo;
 }
