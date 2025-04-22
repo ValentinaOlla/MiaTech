@@ -1,7 +1,8 @@
-import { Todo, User, Project, TodoStatus } from "./types";
+import { Todo, UserInt, Project, TodoStatus } from "./types";
+import { User } from "./User";
 
 const todos: Todo[] = [];
-const users: User[] = [];
+const users: UserInt[] = [];
 
 let Id = 1;
 
@@ -64,7 +65,7 @@ function getTodoSummary(todo: Todo): [string, boolean] {
     return [todo.title, todo.completed];
 }
 
-function createProject(name: string, users: User[], todos: Todo[]): Project {
+function createProject(name: string, users: UserInt[], todos: Todo[]): Project {
     return {
         name,
         users,
@@ -82,3 +83,15 @@ if(!todo) {
 
 todo.status = status;
 }
+
+const user1 = new User(1, "Alice");
+const user2 = new User(2, "Mario");
+const todo1 = addTodo("Prenotare il biglietto per il concerto di Caparezza");
+const todo2 = addTodo("Fare passeggiata di 30 minuti");
+const todo3 = addTodo("Pulire la libreria (pure le parti alte!)");
+
+user1.addTodo(todo1);
+user1.addTodo(todo3);
+user2.addTodo(todo2);
+
+users.push(user1, user2);

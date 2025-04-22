@@ -17,7 +17,7 @@ export enum TodoStatus {
   Completed
 }
 
-export interface User {
+export interface UserInt {
   id: number;
   name: string;
   email?: string;
@@ -26,7 +26,7 @@ export interface User {
 
 export interface Project {
   name: string;
-  users: User[];
+  users: UserInt[];
   todos: Todo[];
 }
 

@@ -4,7 +4,7 @@ export class User {
     id: number;
     name: string;
     email?: string;
-    private todos: Todo[] = [];
+    todos: Todo[] = [];
 
     constructor(id: number, name: string, email?:string) {
         this.id = id;
