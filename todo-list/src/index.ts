@@ -71,3 +71,14 @@ function createProject(name: string, users: User[], todos: Todo[]): Project {
         todos,
     };
 }
+
+function updateTodoStatus(todoId: number, status: TodoStatus): void {
+const todo = todos.find(t => t.id === todoId);
+
+if(!todo) {
+    console.warn("Todo non trovato");
+    return;
+}
+
+todo.status = status;
+}
