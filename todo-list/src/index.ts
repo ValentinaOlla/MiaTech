@@ -33,3 +33,13 @@ function getUserTodos(userId: number): Todo[] {
 const throwError = (message?: string): never => {
     throw new Error(message);
 }
+
+function parseInput(input: unknown): string {
+    if(typeof input === "string") {
+        return input;
+    } else if(typeof input === "number") {
+        return input.toString();
+    } else {
+        return throwError("Questo tipo di input non è valido");
+    }
+}
