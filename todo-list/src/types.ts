@@ -34,3 +34,7 @@ export interface Project {
   todos: Todo[];
 }
 
+export type TodoRecord = {
+  [id: number]: Todo;
+}
+
