@@ -11,6 +11,10 @@ export interface TodoWithMetadata extends Todo {
   metadata: any;
 }
 
+export type PartialTodo = {
+  [K in keyof Todo]?: Todo[K];
+}
+
 export enum TodoStatus {
   Pending,
   InPogress,

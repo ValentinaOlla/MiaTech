@@ -1,4 +1,4 @@
-import { Todo, UserInt, Project, TodoStatus } from "./types";
+import { Todo, UserInt, Project, TodoStatus, PartialTodo } from "./types";
 import { User } from "./User";
 
 const todos: Todo[] = [];
@@ -59,6 +59,16 @@ function updateTodo(id: number, update: Partial<Todo>): void {
         return;
     }
     Object.assign(todo, update);
+}
+
+function updatePartialTodo(todoId: number, updates: PartialTodo): void {
+    const todo = todos.find(t => t.id === todoId);
+
+    if(!todo) {
+        console.warn("Todo non trovato");
+        return;
+    }
+    Object.assign(todo, updates);
 }
 
 function getTodoSummary(todo: Todo): [string, boolean] {
