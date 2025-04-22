@@ -4,10 +4,17 @@ export interface Todo {
   completed: boolean;
   userId?: number;
   metadata?: any;
+  status?: TodoStatus;
 }
 
 export interface TodoWithMetadata extends Todo {
   metadata: any;
+}
+
+export enum TodoStatus {
+  Pending,
+  InPogress,
+  Completed
 }
 
 export interface User {
