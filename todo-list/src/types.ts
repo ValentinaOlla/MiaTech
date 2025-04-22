@@ -17,3 +17,9 @@ export interface User {
   readonly todos: ReadonlyArray<Todo>;
 }
 
+export interface Project {
+  name: string;
+  users: User[];
+  todos: Todo[];
+}
+

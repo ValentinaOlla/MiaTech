@@ -1,4 +1,4 @@
-import { Todo, User } from "./types";
+import { Todo, User, Project } from "./types";
 
 const todos: Todo[] = [];
 const users: User[] = [];
@@ -61,4 +61,12 @@ function updateTodo(id: number, update: Partial<Todo>): void {
 
 function getTodoSummary(todo: Todo): [string, boolean] {
     return [todo.title, todo.completed];
+}
+
+function createProject(name: string, users: User[], todos: Todo[]): Project {
+    return {
+        name,
+        users,
+        todos,
+    };
 }
