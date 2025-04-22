@@ -6,8 +6,13 @@ export interface Todo {
   metadata?: any;
 }
 
-export interface User {
-    id: number;
-    name: string;
-    email?: string;
+export interface TodoWithMetadata extends Todo {
+  metadata: any;
 }
+
+export interface User {
+  id: number;
+  name: string;
+  email?: string;
+}
+
