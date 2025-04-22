@@ -58,3 +58,7 @@ function updateTodo(id: number, update: Partial<Todo>): void {
     }
     Object.assign(todo, update);
 }
+
+function getTodoSummary(todo: Todo): [string, boolean] {
+    return [todo.title, todo.completed];
+}
